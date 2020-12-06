@@ -1,0 +1,26 @@
+{
+	"name": "trail",
+	"plugin-id": "Particles",
+	"sid": 541190525419337,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 569201808579559
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3160060,
+		"useCollisionPoly": true
+	}
+}

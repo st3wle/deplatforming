@@ -1,0 +1,96 @@
+{
+	"name": "activistbutton",
+	"plugin-id": "Sprite",
+	"sid": 731860086598970,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "refresh",
+			"type": "number",
+			"desc": "",
+			"sid": 574914007464208
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 400,
+						"height": 400,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5177393,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.7402016028049083,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.7402016028049083
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 400,
+						"height": 400,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3369361,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.7414086460350837,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.7414086460350837
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 817973801120565,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "languagetext",
+	"plugin-id": "Text",
+	"sid": 173244258482208,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "tracker",
+			"type": "number",
+			"desc": "",
+			"sid": 232683559033688
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,53 @@
+{
+	"name": "gohlogo",
+	"plugin-id": "Sprite",
+	"sid": 909524323322716,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6601858,
+						"collisionPoly": {
+							"points": [
+								0.03983516483516483,
+								0.32222222222222224,
+								0.9587912087912088,
+								0.32222222222222224,
+								0.9615384615384616,
+								0.5,
+								0.9436813186813187,
+								0.5444444444444444,
+								0.04395604395604396,
+								0.6333333333333333,
+								0.038461538461538464,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 609450717151291,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
