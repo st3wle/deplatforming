@@ -126,9 +126,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 271456988171838,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 705599240496294,
 					"parameters": {
 						"object": "title"
 					}
@@ -178,9 +178,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 165646139980817,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 573453803312229,
 					"parameters": {
 						"object": "startmenu"
 					}
@@ -203,9 +203,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 142385179638662,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 655143398435032,
 					"parameters": {
 						"object": "startmenu"
 					},
@@ -329,9 +329,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 863563290830996,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 286468189920145,
 					"parameters": {
 						"object": "menubutton"
 					}
@@ -354,9 +354,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 297509490911452,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 953889605497651,
 					"parameters": {
 						"object": "menubutton"
 					},

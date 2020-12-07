@@ -410,46 +410,46 @@
 				{
 					"id": "set-at-x",
 					"objectClass": "ticker_content",
-					"sid": 220864977868254,
+					"sid": 394767460728601,
 					"parameters": {
 						"x": "0",
-						"value": "languagearray.at(language,27)"
+						"value": "languagearray.at(language,63)"
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "ticker_content",
-					"sid": 387836270354017,
+					"sid": 120014164919938,
 					"parameters": {
 						"x": "1",
-						"value": "languagearray.at(language,26)"
+						"value": "languagearray.at(language,62)"
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "ticker_content",
-					"sid": 965943506228754,
+					"sid": 878675295995837,
 					"parameters": {
 						"x": "2",
-						"value": "languagearray.at(language,25)"
+						"value": "languagearray.at(language,61)"
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "ticker_content",
-					"sid": 442808034428954,
+					"sid": 962016818684991,
 					"parameters": {
 						"x": "3",
-						"value": "\"\""
+						"value": "languagearray.at(language,60)"
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "ticker_content",
-					"sid": 722108438796171,
+					"sid": 907684823559156,
 					"parameters": {
 						"x": "4",
-						"value": "\"\""
+						"value": "languagearray.at(language,59)"
 					}
 				},
 				{
@@ -502,6 +502,36 @@
 			"sid": 111089014605689
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 553428775347927
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 126865867963475,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "s1",
+					"sid": 568001913380958,
+					"parameters": {
+						"instance-variable": "radicalisation",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 732906923744830
+		},
+		{
 			"eventType": "comment",
 			"text": "SELFRADICALISATION",
 			"text-color": [
@@ -517,23 +547,13 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 438347395423245,
+					"sid": 177685058762418,
 					"parameters": {
-						"interval-seconds": "1*slowdown"
+						"interval-seconds": "2*slowdown"
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "add-to-instvar",
-					"objectClass": "s1",
-					"sid": 247994282002787,
-					"parameters": {
-						"instance-variable": "radicalisation",
-						"value": "1"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 599132019429605,
 			"children": [
 				{
@@ -951,9 +971,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 651218092027171,
+					"sid": 125264859585166,
 					"parameters": {
-						"interval-seconds": "5"
+						"interval-seconds": "2"
 					}
 				}
 			],
@@ -4968,9 +4988,9 @@
 						{
 							"id": "set-position",
 							"objectClass": "activisttxt",
-							"sid": 662241982616216,
+							"sid": 197131059302817,
 							"parameters": {
-								"x": "1315",
+								"x": "1215",
 								"y": "700"
 							}
 						}
@@ -5002,9 +5022,9 @@
 						{
 							"id": "set-position",
 							"objectClass": "activisttxt",
-							"sid": 249487619578464,
+							"sid": 912249415056047,
 							"parameters": {
-								"x": "1315",
+								"x": "1215",
 								"y": "675"
 							}
 						}
@@ -5455,14 +5475,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 810378433639904,
-					"parameters": {
-						"object": "activistbutton"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 265699915523811,
@@ -5487,14 +5499,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 350646871176208,
-					"parameters": {
-						"object": "counterspeech"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -5521,14 +5525,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 866492367949500,
-					"parameters": {
-						"object": "s1"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 491949537421497,
@@ -5553,14 +5549,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 169144051458885,
-					"parameters": {
-						"object": "s2"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -5587,14 +5575,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 862469408375474,
-					"parameters": {
-						"object": "s3"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 790622745226776,
@@ -5619,14 +5599,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 422428090878645,
-					"parameters": {
-						"object": "s4"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -5653,14 +5625,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 753834833696264,
-					"parameters": {
-						"object": "s5"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 929761294191380,
@@ -5685,14 +5649,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 718787878528405,
-					"parameters": {
-						"object": "s6"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -5719,14 +5675,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 404297043490214,
-					"parameters": {
-						"object": "s7"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 222570784209402,
@@ -5751,14 +5699,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 587119660774291,
-					"parameters": {
-						"object": "s8"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -5785,14 +5725,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 601232452978445,
-					"parameters": {
-						"object": "s9"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 811641578152922,
@@ -5817,14 +5749,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 191333013998128,
-					"parameters": {
-						"object": "s10"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -5851,14 +5775,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 872569194873280,
-					"parameters": {
-						"object": "monitoring"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 926006119715294,
@@ -5884,14 +5800,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 304780001895667,
-					"parameters": {
-						"object": "deplatforming"
-					}
-				},
-				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 813568806380157,
@@ -5916,14 +5824,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 353031497198003,
-					"parameters": {
-						"object": "menubutton"
-					}
-				},
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
@@ -6304,7 +6204,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 651761976384775,
+					"sid": 633421225311900,
 					"parameters": {
 						"variable": "actions",
 						"comparison": 0,
@@ -6335,11 +6235,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 737813730438641,
+					"sid": 298989314223474,
 					"parameters": {
 						"object-to-create": "monitoring",
 						"layer": "0",
-						"x": "1530",
+						"x": "1460",
 						"y": "700"
 					}
 				},
@@ -6355,11 +6255,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 246154512278993,
+					"sid": 180195677707439,
 					"parameters": {
 						"object-to-create": "monitoringtxt",
 						"layer": "1",
-						"x": "1500",
+						"x": "1410",
 						"y": "700"
 					}
 				},
@@ -6567,9 +6467,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "monitoringtxt",
-					"sid": 640672737667014,
+					"sid": 267246624792256,
 					"parameters": {
-						"x": "1480",
+						"x": "1410",
 						"y": "700"
 					}
 				},
@@ -6605,9 +6505,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "monitoringtxt",
-					"sid": 635887407838251,
+					"sid": 393930942573529,
 					"parameters": {
-						"x": "1480",
+						"x": "1410",
 						"y": "675"
 					}
 				},
@@ -7985,18 +7885,18 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 456985769649662,
+					"sid": 492618850481042,
 					"parameters": {
 						"x": "2",
 						"y": "2",
 						"comparison": 5,
-						"value": "4"
+						"value": "3"
 					}
 				},
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 167623343992854,
+					"sid": 877846973936768,
 					"parameters": {
 						"variable": "slowdown",
 						"comparison": 2,
@@ -8006,7 +7906,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 530141858439454,
+					"sid": 521474329696694,
 					"parameters": {
 						"variable": "actions",
 						"comparison": 5,
@@ -8045,9 +7945,9 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 831782863411163,
+					"sid": 451062016233448,
 					"parameters": {
-						"x": "3",
+						"x": "2",
 						"y": "2",
 						"comparison": 5,
 						"value": "3"
@@ -8165,9 +8065,9 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 354021915109868,
+					"sid": 235353582859123,
 					"parameters": {
-						"x": "6",
+						"x": "3",
 						"y": "2",
 						"comparison": 5,
 						"value": "4"
@@ -8225,9 +8125,9 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 559488188166404,
+					"sid": 833804261688010,
 					"parameters": {
-						"x": "9",
+						"x": "3",
 						"y": "2",
 						"comparison": 5,
 						"value": "4"
@@ -8364,11 +8264,11 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 474848201065962,
+							"sid": 807087705325542,
 							"parameters": {
 								"object-to-create": "deplatforming",
 								"layer": "0",
-								"x": "1685",
+								"x": "1645",
 								"y": "700"
 							}
 						},
@@ -8519,9 +8419,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "deplatformtxt",
-					"sid": 780464177858787,
+					"sid": 377958736312507,
 					"parameters": {
-						"x": "1625",
+						"x": "1585",
 						"y": "675"
 					}
 				}
@@ -8545,9 +8445,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "deplatformtxt",
-					"sid": 681057342411424,
+					"sid": 691187725865660,
 					"parameters": {
-						"x": "1625",
+						"x": "1585",
 						"y": "700"
 					}
 				}
@@ -9558,9 +9458,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 625867872621693,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 666587971401027,
 					"parameters": {
 						"object": "menubutton"
 					}
@@ -9583,9 +9483,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 473556851876818,
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 775262355338233,
 					"parameters": {
 						"object": "menubutton"
 					},
