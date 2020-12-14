@@ -109,7 +109,7 @@
 			"title",
 			"starttext",
 			"languagetext",
-			"infotext",
+			"tutortext",
 			"Touch",
 			"JSON",
 			"AJAX",
@@ -129,7 +129,6 @@
 			"s10",
 			"xysave",
 			"ticker5",
-			"connectiontracker",
 			"tracker",
 			"ticker4",
 			"deplatformtxt",
@@ -143,7 +142,7 @@
 			"counterspeech",
 			"counterspeechtxt",
 			"activistsavail",
-			"overalrad",
+			"overallrad",
 			"reported",
 			"endstate",
 			"endhint",
@@ -151,8 +150,15 @@
 			"monitoringtxt",
 			"deplatforming",
 			"Text",
-			"gohlogo",
-			"endstatement"
+			"endstatement",
+			"CS",
+			"objecttitle",
+			"Text2",
+			"Tutorial1",
+			"Tutorial2",
+			"Tutorial3",
+			"pageright",
+			"pageleft"
 		],
 		"subfolders": []
 	},
@@ -161,7 +167,8 @@
 	"families": {
 		"items": [
 			"startmenu",
-			"mouseover"
+			"networks",
+			"autogen"
 		],
 		"subfolders": []
 	},
@@ -169,7 +176,7 @@
 		"items": [
 			"startmenu",
 			"game",
-			"infoscreen",
+			"tutorial",
 			"load",
 			"gameover"
 		],
@@ -270,6 +277,11 @@
 					"name": "language.json",
 					"type": "application/json",
 					"sid": 863069326522372
+				},
+				{
+					"name": "tracker.json",
+					"type": "application/json",
+					"sid": 313440653173482
 				}
 			],
 			"subfolders": []

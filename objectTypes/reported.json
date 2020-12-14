@@ -3,14 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 946541525135121,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "refresh",
-			"type": "number",
-			"desc": "",
-			"sid": 687549091777604
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Fade",

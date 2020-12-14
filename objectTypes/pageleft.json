@@ -1,16 +1,9 @@
 {
-	"name": "monitoring",
+	"name": "pageleft",
 	"plugin-id": "Sprite",
-	"sid": 336246911545481,
+	"sid": 393080614661857,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "cooldown",
-			"type": "boolean",
-			"desc": "",
-			"sid": 696760486790923
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,31 +11,31 @@
 			{
 				"frames": [
 					{
-						"width": 400,
-						"height": 400,
+						"width": 260,
+						"height": 259,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4198987,
+						"imageSpriteId": 259599,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
-						"width": 400,
-						"height": 400,
+						"width": 260,
+						"height": 259,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1208617,
+						"imageSpriteId": 4049864,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 882687841036371,
+				"sid": 569177761954254,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,40 +1,27 @@
 {
-	"name": "load",
+	"name": "tutorial",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "title",
+					"type": "menubutton",
 					"properties": {
-						"text": "deplatforming",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 100,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 2,
+					"uid": 17,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 960,
-						"y": 320,
-						"width": 850,
-						"height": 200,
+						"x": 80,
+						"y": 80,
+						"width": 150,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -48,54 +35,12 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "Tutorial1",
 					"properties": {
-						"text": "by",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 960,
-						"y": 475,
-						"width": 200,
-						"height": 50,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Text2",
-					"properties": {
-						"text": "gameoverhate",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
+						"size": 40,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -111,14 +56,156 @@
 						"initially-visible": true,
 						"origin": "center"
 					},
-					"uid": 28,
+					"uid": 32,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 960,
-						"y": 680,
-						"width": 600,
-						"height": 200,
+						"y": 200,
+						"width": 1600,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial2",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 40,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 33,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 500,
+						"width": 1600,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial3",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 40,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 46,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 960,
+						"y": 800,
+						"width": 1600,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pageright",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 49,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1830,
+						"y": 540,
+						"width": 150,
+						"height": 150,
+						"originX": 0.5038461538461538,
+						"originY": 0.5019305019305019,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pageleft",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 50,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 80,
+						"y": 540,
+						"width": 150,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -132,7 +219,7 @@
 					}
 				}
 			],
-			"sid": 695391912010522,
+			"sid": 470721253164711,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -157,7 +244,7 @@
 			"global": false
 		}
 	],
-	"sid": 324048685755780,
+	"sid": 736933314080752,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 3840,

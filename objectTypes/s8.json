@@ -5,22 +5,16 @@
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "radicalisation",
-			"type": "number",
-			"desc": "",
-			"sid": 577092539268070
-		},
-		{
 			"name": "randomize",
 			"type": "number",
 			"desc": "",
 			"sid": 344348240926268
 		},
 		{
-			"name": "limit",
+			"name": "save",
 			"type": "number",
 			"desc": "",
-			"sid": 395373040204246
+			"sid": 358042911898163
 		}
 	],
 	"behaviorTypes": [],

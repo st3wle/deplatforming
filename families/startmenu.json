@@ -3,18 +3,12 @@
 	"plugin-id": "Text",
 	"sid": 132676541266244,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 986218092625466
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
 		"title",
 		"languagetext",
-		"infotext",
+		"tutortext",
 		"starttext"
 	]
 }

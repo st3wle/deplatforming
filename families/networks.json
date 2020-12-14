@@ -1,0 +1,29 @@
+{
+	"name": "networks",
+	"plugin-id": "Sprite",
+	"sid": 128556663298278,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 695128250855272
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"s9",
+		"s8",
+		"s7",
+		"s6",
+		"s5",
+		"s4",
+		"s3",
+		"s2",
+		"s10",
+		"s1",
+		"activistbutton",
+		"deplatforming",
+		"monitoring"
+	]
+}

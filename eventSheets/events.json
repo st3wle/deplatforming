@@ -12,6 +12,16 @@
 			"sid": 220889824931561
 		},
 		{
+			"eventType": "variable",
+			"name": "tutorialpage",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 748757440646130
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -60,6 +70,11 @@
 					"parameters": {
 						"json": "AJAX.LastData"
 					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "pageright",
+					"sid": 579264269861682
 				}
 			],
 			"sid": 464182356679496
@@ -105,7 +120,7 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "infotext",
+					"objectClass": "tutortext",
 					"sid": 325803348728097,
 					"parameters": {
 						"text": "languagearray.At(language,3)"
@@ -120,7 +135,135 @@
 					}
 				}
 			],
-			"sid": 338967742837395
+			"sid": 338967742837395,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 685621698263348,
+							"parameters": {
+								"variable": "tutorialpage",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial1",
+							"sid": 403261352901527,
+							"parameters": {
+								"text": "languagearray.At(language,66)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial2",
+							"sid": 372720906530968,
+							"parameters": {
+								"text": "languagearray.At(language,67)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial3",
+							"sid": 569218579108024,
+							"parameters": {
+								"text": "languagearray.At(language,68)"
+							}
+						}
+					],
+					"sid": 123043292152345
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 978957332994643,
+							"parameters": {
+								"variable": "tutorialpage",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial1",
+							"sid": 493112477367133,
+							"parameters": {
+								"text": "languagearray.At(language,69)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial2",
+							"sid": 984122786051027,
+							"parameters": {
+								"text": "languagearray.At(language,70)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial3",
+							"sid": 944266861448873,
+							"parameters": {
+								"text": "languagearray.At(language,71)"
+							}
+						}
+					],
+					"sid": 212152954468442
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 494638243328897,
+							"parameters": {
+								"variable": "tutorialpage",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial1",
+							"sid": 273543110745342,
+							"parameters": {
+								"text": "languagearray.At(language,72)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial2",
+							"sid": 482322818984507,
+							"parameters": {
+								"text": "languagearray.At(language,73)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial3",
+							"sid": 378467261332847,
+							"parameters": {
+								"text": "languagearray.At(language,74)"
+							}
+						}
+					],
+					"sid": 467886823296468
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -138,20 +281,20 @@
 				{
 					"id": "create-object-by-name",
 					"objectClass": "System",
-					"sid": 786585374246773,
+					"sid": 745707549665320,
 					"parameters": {
 						"object-name": "\"popup\"",
 						"layer": "1",
-						"x": "1300",
+						"x": "1200",
 						"y": "350"
 					}
 				},
 				{
 					"id": "set-font-size",
 					"objectClass": "popup",
-					"sid": 912845133878750,
+					"sid": 545117580264871,
 					"parameters": {
-						"size-pt": "25"
+						"size-pt": "40"
 					}
 				},
 				{
@@ -165,10 +308,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "popup",
-					"sid": 743246583907288,
+					"sid": 591214302649941,
 					"parameters": {
-						"width": "400",
-						"height": "200"
+						"width": "550",
+						"height": "300"
 					}
 				}
 			],
@@ -280,11 +423,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 696517852712735,
+					"sid": 473929999740461,
 					"parameters": {
 						"variable": "language",
 						"comparison": 0,
-						"value": "7"
+						"value": "2"
 					}
 				}
 			],
@@ -309,17 +452,26 @@
 					"objectClass": "Touch",
 					"sid": 147910904871627,
 					"parameters": {
-						"object": "infotext"
+						"object": "tutortext"
 					}
 				}
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 278510849139386,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "0"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 295566339039903,
 					"parameters": {
-						"layout": "infoscreen"
+						"layout": "tutorial"
 					}
 				}
 			],
@@ -399,6 +551,208 @@
 				}
 			],
 			"sid": 236359241994541
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 702177373374340,
+					"parameters": {
+						"object": "pageright"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 570037793669727,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 687479414954537
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 244721730568398,
+					"parameters": {
+						"object": "pageright"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 834814077182923,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 952907476773151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 503020414174562,
+					"parameters": {
+						"object": "pageright"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 730969618716529,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 993358478609137
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 823038263687980,
+					"parameters": {
+						"object": "pageleft"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 992931722116177,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 344787657773361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 533432692367543,
+					"parameters": {
+						"object": "pageleft"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 381791744046849,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 551924239558576
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 259507038404513,
+					"parameters": {
+						"object": "pageleft"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 322534090341341,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 552154015596390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 324288713160699,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 328894703330956,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 995444064470154
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 483053565340376,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 122692634993845,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 831735098213643
 		}
 	],
 	"sid": 945314861288037

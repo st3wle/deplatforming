@@ -29,13 +29,7 @@
 					},
 					"uid": 3,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 950,
 						"y": 100,
@@ -77,13 +71,7 @@
 					},
 					"uid": 4,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 100,
 						"y": 450,
@@ -127,13 +115,7 @@
 					"instanceVariables": {
 						"tracker": 0
 					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 100,
 						"y": 600,
@@ -152,7 +134,7 @@
 					}
 				},
 				{
-					"type": "infotext",
+					"type": "tutortext",
 					"properties": {
 						"text": "Information",
 						"enable-bbcode": true,
@@ -175,13 +157,7 @@
 					},
 					"uid": 6,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 100,
 						"y": 750,
@@ -297,20 +273,10 @@
 			"instanceVariables": {}
 		},
 		{
-			"type": "connectiontracker",
-			"properties": {
-				"width": 10,
-				"height": 10,
-				"depth": 1
-			},
-			"uid": 28,
-			"instanceVariables": {}
-		},
-		{
 			"type": "tracker",
 			"properties": {
 				"width": 10,
-				"height": 3,
+				"height": 5,
 				"depth": 1
 			},
 			"uid": 29,

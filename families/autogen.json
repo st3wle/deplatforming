@@ -1,0 +1,13 @@
+{
+	"name": "autogen",
+	"plugin-id": "Sprite",
+	"sid": 460085114159548,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"reported",
+		"CS",
+		"infect"
+	]
+}
