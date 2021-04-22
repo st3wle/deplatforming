@@ -1,0 +1,32 @@
+{
+	"name": "tutorpin",
+	"plugin-id": "Text",
+	"sid": 235581709867029,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 392264531264186
+		},
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 548527999649362
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Tutorial1",
+		"Tutorial2",
+		"tutbutton1",
+		"tutbutton2",
+		"tutbutton3",
+		"Tutorial4",
+		"Tutorial5",
+		"popup",
+		"Tutorial3",
+		"Tutorial6",
+		"Tutorial7"
+	]
+}

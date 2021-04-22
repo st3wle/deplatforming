@@ -136,10 +136,10 @@
 				{
 					"type": "tutortext",
 					"properties": {
-						"text": "Information",
+						"text": "Tutorial",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 59,
+						"size": 60,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -178,10 +178,10 @@
 				{
 					"type": "popup",
 					"properties": {
-						"text": "\"\"",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 30,
+						"size": 36,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -199,12 +199,27 @@
 					},
 					"uid": 8,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": -284,
-						"y": -512,
-						"width": 500,
-						"height": 400,
+						"x": 1200,
+						"y": 350,
+						"width": 550,
+						"height": 300,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -216,6 +231,48 @@
 						"angle": 0,
 						"zElevation": 0,
 						"blendMode": "source-atop"
+					}
+				},
+				{
+					"type": "Creditstext",
+					"properties": {
+						"text": "Credits",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 60,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 76,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 100,
+						"y": 900,
+						"width": 500,
+						"height": 100,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
@@ -297,5 +354,5 @@
 	"width": 3840,
 	"height": 2160,
 	"unboundedScrolling": false,
-	"eventSheet": "events"
+	"eventSheet": "startevents"
 }

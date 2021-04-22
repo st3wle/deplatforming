@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 22500,
+	"savedWithRelease": 24100,
 	"name": "deplatforming5",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Json",
 			"name": "JSON",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "AJAX",
 			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "Arr",
 			"name": "Array",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Particles",
 			"name": "Particles",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "MoveTo",
 			"name": "Move To",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Pathfinding",
 			"name": "Pathfinding",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,15 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r241",
 			"bundled": false
 		},
 		{
@@ -99,7 +107,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r225",
+			"version": "r241",
 			"bundled": false
 		}
 	],
@@ -139,7 +147,6 @@
 			"ticker_content",
 			"activistbutton",
 			"activisttxt",
-			"counterspeech",
 			"counterspeechtxt",
 			"activistsavail",
 			"overallrad",
@@ -149,16 +156,47 @@
 			"monitoring",
 			"monitoringtxt",
 			"deplatforming",
-			"Text",
 			"endstatement",
 			"CS",
 			"objecttitle",
-			"Text2",
 			"Tutorial1",
 			"Tutorial2",
-			"Tutorial3",
 			"pageright",
-			"pageleft"
+			"pageleft",
+			"3strike_s6",
+			"3strike_s2",
+			"3strike_s3",
+			"3strike_s4",
+			"3strike_s9",
+			"toxic",
+			"credits_EU",
+			"Sprite",
+			"pin",
+			"ciac",
+			"cospe_logo_rgb",
+			"EduPro",
+			"JFF",
+			"nowoczesnapolsk",
+			"savoirdevenir",
+			"UALg",
+			"zaffiria",
+			"pyrlogo",
+			"credits_gamejam",
+			"credits_partners",
+			"Creditstext",
+			"TutorialHeader",
+			"pagecounter",
+			"tutbutton1",
+			"tutbutton2",
+			"tutbutton3",
+			"Tutorial4",
+			"Tutorial5",
+			"tutmech1",
+			"tutmech2",
+			"Tutorial3",
+			"tutmech3",
+			"Tutorial6",
+			"Tutorial7"
 		],
 		"subfolders": []
 	},
@@ -168,7 +206,10 @@
 		"items": [
 			"startmenu",
 			"networks",
-			"autogen"
+			"autogen",
+			"tutorpin",
+			"mechanics1",
+			"mechanics2"
 		],
 		"subfolders": []
 	},
@@ -177,15 +218,17 @@
 			"startmenu",
 			"game",
 			"tutorial",
-			"load",
+			"credits",
 			"gameover"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"events",
-			"gameevents"
+			"startevents",
+			"gameevents",
+			"tutorialevents",
+			"gameoverevents"
 		],
 		"subfolders": []
 	},
@@ -304,7 +347,7 @@
 		"authorWebsite": "",
 		"appId": "",
 		"pixelRounding": false,
-		"useLoaderLayout": true,
+		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
@@ -331,6 +374,7 @@
 		"orientations": "landscape",
 		"enableWebGL": true,
 		"gpuPreference": "high-performance",
+		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "trilinear",
@@ -344,5 +388,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": "load"
+	"firstLayout": "startmenu"
 }

@@ -1,0 +1,1426 @@
+{
+	"name": "tutorialevents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 666789814595678
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "menubutton",
+					"sid": 498531406924477
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 949039237236947,
+					"parameters": {
+						"tag": "\"Start\"",
+						"file": "language.json"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "pageright",
+					"sid": 501198198318267
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "pageleft",
+					"sid": 932298664665102
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "networks",
+					"sid": 271737362083804
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 195835302277066,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 335434631821125,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial1",
+					"sid": 960971455845202,
+					"parameters": {
+						"text": "languagearray.At(language,66)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial2",
+					"sid": 171616553948750,
+					"parameters": {
+						"text": "languagearray.At(language,34)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial3",
+					"sid": 315971748859539,
+					"parameters": {
+						"text": "languagearray.At(language,68)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial4",
+					"sid": 334245482759472,
+					"parameters": {
+						"text": "languagearray.At(language,69)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial5",
+					"sid": 578707435845095,
+					"parameters": {
+						"text": "languagearray.At(language,70)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial6",
+					"sid": 272258745344801,
+					"parameters": {
+						"text": "languagearray.At(language,71)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial7",
+					"sid": 469027878736672,
+					"parameters": {
+						"text": "languagearray.At(language,72)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tutbutton1",
+					"sid": 675935588052949,
+					"parameters": {
+						"text": "languagearray.At(language,28)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tutbutton2",
+					"sid": 374787093714729,
+					"parameters": {
+						"text": "languagearray.At(language,46)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tutbutton3",
+					"sid": 887876287713864,
+					"parameters": {
+						"text": "languagearray.At(language,50)"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "networks",
+					"sid": 441182029480123,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics1",
+					"sid": 905563065633628,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics2",
+					"sid": 694344198500779,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "toxic",
+					"sid": 481446654874628,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "tutorpin",
+					"sid": 257144914475980,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 229519451081247
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 188501437785504,
+					"parameters": {
+						"tag": "\"Start\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "parse",
+					"objectClass": "JSON",
+					"sid": 527671110048600,
+					"parameters": {
+						"data": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 287590612986596
+				},
+				{
+					"id": "load",
+					"objectClass": "languagearray",
+					"sid": 664575156585746,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 347298287679651
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "CS",
+					"sid": 328281719398379
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "CS",
+					"sid": 207884083115522,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 369800262419533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "tutmech1",
+					"sid": 934324189911820
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "tutmech1",
+					"sid": 140463874444757,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 281778819957079
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "tutmech3",
+					"sid": 247551047106127
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "tutmech3",
+					"sid": 211126658521812,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 395384186709171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "3strike_s2",
+					"sid": 583647544152795
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "3strike_s2",
+					"sid": 971095568751196,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 508001508355839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 476097417225852
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "pagecounter",
+					"sid": 966597208616459,
+					"parameters": {
+						"text": "\"<\" & tutorialpage+1 & \"/5>\""
+					}
+				}
+			],
+			"sid": 269516807127343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 408924159154590,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TutorialHeader",
+					"sid": 274216090330085,
+					"parameters": {
+						"text": "languagearray.At(language,65)"
+					}
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial1",
+					"sid": 977280830067200,
+					"behaviorType": "Pin"
+				}
+			],
+			"sid": 229360333794503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 675192761760424,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TutorialHeader",
+					"sid": 387683985066592,
+					"parameters": {
+						"text": "languagearray.At(language,30)"
+					}
+				},
+				{
+					"id": "unpin",
+					"objectClass": "networks",
+					"sid": 539476098399953,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "tutbutton1",
+					"sid": 476105241291995,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "tutbutton2",
+					"sid": 984910357337582,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "tutbutton3",
+					"sid": 358645575702326,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "popup",
+					"sid": 224721320704557,
+					"behaviorType": "Pin"
+				}
+			],
+			"sid": 176756121033024
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 629359602760271,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TutorialHeader",
+					"sid": 191037270333807,
+					"parameters": {
+						"text": "languagearray.At(language,67)"
+					}
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial2",
+					"sid": 401841987802745,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial3",
+					"sid": 955662895318505,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial4",
+					"sid": 982344950385435,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "mechanics1",
+					"sid": 764159476442725,
+					"behaviorType": "Pin2"
+				}
+			],
+			"sid": 370817647153244
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 631215941862570,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TutorialHeader",
+					"sid": 710643879616437,
+					"parameters": {
+						"text": "languagearray.At(language,67)"
+					}
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial5",
+					"sid": 616921578284775,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial6",
+					"sid": 784579587409273,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "mechanics2",
+					"sid": 379600679033038,
+					"behaviorType": "Pin2"
+				}
+			],
+			"sid": 125072180727069
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 264065596671852,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "unpin",
+					"objectClass": "toxic",
+					"sid": 156040976489286,
+					"behaviorType": "Pin"
+				},
+				{
+					"id": "unpin",
+					"objectClass": "Tutorial7",
+					"sid": 767477442858505,
+					"behaviorType": "Pin"
+				}
+			],
+			"sid": 570993142222234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 739201699710971,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 590787015152415,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 514893443659583,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 607504414528442,
+					"parameters": {
+						"object": "menubutton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 365990147254972,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 718321464606539,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 733366102138609,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 342383817785932,
+					"parameters": {
+						"layout": "startmenu"
+					}
+				}
+			],
+			"sid": 806134801054957
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 336163372406107,
+					"parameters": {
+						"object": "pageright"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pageright",
+					"sid": 429215613337013,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 774718565433500
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 300693658230367,
+					"parameters": {
+						"object": "pageright"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pageright",
+					"sid": 509575718351241,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 913481642928563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 410136664111398,
+					"parameters": {
+						"object": "pageright"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "networks",
+					"sid": 156815084870483,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics1",
+					"sid": 172792415262910,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics2",
+					"sid": 750447815505864,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "toxic",
+					"sid": 279626536157500,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "tutorpin",
+					"sid": 794313952816262,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 235718068009813,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 804159497611811,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 430055425579400
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 226221272977068,
+					"parameters": {
+						"object": "pageleft"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pageleft",
+					"sid": 307434267927361,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 748543123524469
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 804151909813116,
+					"parameters": {
+						"object": "pageleft"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "pageleft",
+					"sid": 152973896503712,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 179087943955856
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 739192007061155,
+					"parameters": {
+						"object": "pageleft"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "networks",
+					"sid": 156815084870483,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics1",
+					"sid": 864461776012821,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics2",
+					"sid": 898891884042277,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "tutorpin",
+					"sid": 794313952816262,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "toxic",
+					"sid": 318343862548247,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 808696023355074,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 911368081987390,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 146392976404773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 417780096390104,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 474774741067896,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 519635224115123
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 557906439016013,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 927460389998631,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 706036983858851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 790639162887011,
+					"parameters": {
+						"object": "activistbutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 464393654284380,
+					"parameters": {
+						"text": "languagearray.At(language,29)"
+					}
+				}
+			],
+			"sid": 558907162395786,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 329244594346430,
+					"parameters": {
+						"object": "s1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 648913887520198,
+					"parameters": {
+						"text": "languagearray.At(language,35)"
+					}
+				}
+			],
+			"sid": 692383188548423,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 550765214985569,
+					"parameters": {
+						"object": "s2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 857438253375147,
+					"parameters": {
+						"text": "languagearray.At(language,36)"
+					}
+				}
+			],
+			"sid": 292623478805363,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 194221769810747,
+					"parameters": {
+						"object": "s3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 827444789633042,
+					"parameters": {
+						"text": "languagearray.At(language,37)"
+					}
+				}
+			],
+			"sid": 264202955226937,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 511257844379967,
+					"parameters": {
+						"object": "s4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 465676448555709,
+					"parameters": {
+						"text": "languagearray.At(language,38)"
+					}
+				}
+			],
+			"sid": 836651451317432,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 455697535485284,
+					"parameters": {
+						"object": "s5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 533451746460764,
+					"parameters": {
+						"text": "languagearray.At(language,39)"
+					}
+				}
+			],
+			"sid": 472761690888115,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 897310774397981,
+					"parameters": {
+						"object": "s6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 821014905095617,
+					"parameters": {
+						"text": "languagearray.At(language,40)"
+					}
+				}
+			],
+			"sid": 521002231030265,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 623880727480972,
+					"parameters": {
+						"object": "s7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 665898530337405,
+					"parameters": {
+						"text": "languagearray.At(language,41)"
+					}
+				}
+			],
+			"sid": 351861985549102,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 650208602577925,
+					"parameters": {
+						"object": "s8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 165739091043560,
+					"parameters": {
+						"text": "languagearray.At(language,42)"
+					}
+				}
+			],
+			"sid": 703192077498354,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 484659306069492,
+					"parameters": {
+						"object": "s9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 235972803226841,
+					"parameters": {
+						"text": "languagearray.At(language,43)"
+					}
+				}
+			],
+			"sid": 104070124153235,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 471833132588797,
+					"parameters": {
+						"object": "s10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 997854797446610,
+					"parameters": {
+						"text": "languagearray.At(language,44)"
+					}
+				}
+			],
+			"sid": 543446715082462,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 995021169430151,
+					"parameters": {
+						"object": "monitoring"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 215617875131694,
+					"parameters": {
+						"text": "languagearray.At(language,47)"
+					}
+				}
+			],
+			"sid": 514922182594143,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 438454400385416,
+					"parameters": {
+						"object": "deplatforming"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 134464872520629,
+					"parameters": {
+						"text": "languagearray.At(language,51)"
+					}
+				}
+			],
+			"sid": 706194060248541,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 527912287476983,
+					"parameters": {
+						"object": "activistbutton"
+					}
+				},
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 992714362705661,
+					"parameters": {
+						"object": "tutbutton1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 152983761941957,
+					"parameters": {
+						"text": "languagearray.At(language,29)"
+					}
+				}
+			],
+			"sid": 488483002596939,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 294322404501467,
+					"parameters": {
+						"object": "monitoring"
+					}
+				},
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 185840804448967,
+					"parameters": {
+						"object": "tutbutton2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 838881686664288,
+					"parameters": {
+						"text": "languagearray.At(language,47)"
+					}
+				}
+			],
+			"sid": 383028637210384,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 367073269998931,
+					"parameters": {
+						"object": "deplatforming"
+					}
+				},
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 400730739211563,
+					"parameters": {
+						"object": "tutbutton3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 938089544798738,
+					"parameters": {
+						"text": "languagearray.At(language,59)"
+					}
+				}
+			],
+			"sid": 329799920969539,
+			"isOrBlock": true
+		}
+	],
+	"sid": 540048038174953
+}

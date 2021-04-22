@@ -8,6 +8,16 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 695128250855272
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 683626446552393
+		},
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 833442719684381
 		}
 	],
 	"effectTypes": [],

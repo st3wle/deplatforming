@@ -145,7 +145,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 960,
-						"y": 600,
+						"y": 650,
 						"width": 900,
 						"height": 200,
 						"originX": 0.5,
@@ -192,5 +192,5 @@
 	"width": 3840,
 	"height": 2160,
 	"unboundedScrolling": false,
-	"eventSheet": "gameevents"
+	"eventSheet": "gameoverevents"
 }

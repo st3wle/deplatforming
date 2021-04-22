@@ -1,0 +1,359 @@
+{
+	"name": "gameoverevents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 567911226002583
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "menubutton",
+					"sid": 950848626172647
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 795392015961793,
+					"parameters": {
+						"tag": "\"text\"",
+						"file": "language.json"
+					}
+				}
+			],
+			"sid": 610483168515547,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 185960824757854,
+							"parameters": {
+								"variable": "endstate",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endstate",
+							"sid": 999528319617686,
+							"parameters": {
+								"text": "languagearray.At(language,52)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "endstatement",
+							"sid": 261947761759972,
+							"parameters": {
+								"text": "languagearray.At(language,54)"
+							}
+						}
+					],
+					"sid": 324532591461001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 932393283830281,
+							"parameters": {
+								"variable": "endstate",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endstate",
+							"sid": 378663031225987,
+							"parameters": {
+								"text": "languagearray.At(language,53)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "endstatement",
+							"sid": 435643714925973,
+							"parameters": {
+								"text": "languagearray.At(language,55)"
+							}
+						}
+					],
+					"sid": 576868148956886
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 522069109017306,
+							"parameters": {
+								"variable": "endstate",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endstate",
+							"sid": 436398026380731,
+							"parameters": {
+								"text": "languagearray.At(language,52)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "endstatement",
+							"sid": 950760540813388,
+							"parameters": {
+								"text": "languagearray.At(language,64)"
+							}
+						}
+					],
+					"sid": 190551703320401
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 688056806213548,
+							"parameters": {
+								"variable": "hint",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endhint",
+							"sid": 295614669632396,
+							"parameters": {
+								"text": "languagearray.At(language,58)"
+							}
+						}
+					],
+					"sid": 331020133291772
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 489091863022656,
+							"parameters": {
+								"variable": "hint",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endhint",
+							"sid": 670614309763848,
+							"parameters": {
+								"text": "languagearray.At(language,57)"
+							}
+						}
+					],
+					"sid": 755044642173942
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 595667710565845,
+							"parameters": {
+								"variable": "hint",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endhint",
+							"sid": 436060235732778,
+							"parameters": {
+								"text": "languagearray.At(language,56)"
+							}
+						}
+					],
+					"sid": 102848191368143
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 110093887834439,
+							"parameters": {
+								"variable": "hint",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "endhint",
+							"sid": 486437466715224,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 873496535885075
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 159300351293511,
+					"parameters": {
+						"tag": "\"text\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "parse",
+					"objectClass": "JSON",
+					"sid": 346196228949414,
+					"parameters": {
+						"data": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 884244915312884
+				},
+				{
+					"id": "load",
+					"objectClass": "languagearray",
+					"sid": 946072632032259,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 511383360643410
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 132038758745711,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 668526383488086
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 673544382010187,
+					"parameters": {
+						"layout": "startmenu"
+					}
+				}
+			],
+			"sid": 998718797434500,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 258314043370327,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 266691507346943,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 205552606384935,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 766916303491266,
+					"parameters": {
+						"object": "menubutton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 962466079366254,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 370497632059877,
+			"isOrBlock": true
+		}
+	],
+	"sid": 335754189650793
+}

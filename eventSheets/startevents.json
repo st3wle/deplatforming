@@ -1,0 +1,461 @@
+{
+	"name": "startevents",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "language",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 220889824931561
+		},
+		{
+			"eventType": "variable",
+			"name": "tutorialpage",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 748757440646130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 863525649809265
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "menubutton",
+					"sid": 858297410297068
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 256593420165644,
+					"parameters": {
+						"tag": "\"Start\"",
+						"file": "language.json"
+					}
+				}
+			],
+			"sid": 464182356679496
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 278777774628944,
+					"parameters": {
+						"tag": "\"Start\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "parse",
+					"objectClass": "JSON",
+					"sid": 200382331540385,
+					"parameters": {
+						"data": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 576255147129497
+				},
+				{
+					"id": "load",
+					"objectClass": "languagearray",
+					"sid": 190331448707996,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 558825501972862,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "languagetext",
+							"sid": 797380961910234,
+							"parameters": {
+								"text": "languagearray.At(language,0)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "starttext",
+							"sid": 757091205829169,
+							"parameters": {
+								"text": "languagearray.At(language,1)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Creditstext",
+							"sid": 439496303867015,
+							"parameters": {
+								"text": "languagearray.At(language,2)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "tutortext",
+							"sid": 351612501416440,
+							"parameters": {
+								"text": "languagearray.At(language,3)"
+							}
+						}
+					],
+					"sid": 905459080831993
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 540989164638928,
+					"parameters": {
+						"object": "title"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "popup",
+					"sid": 803285928698774,
+					"parameters": {
+						"text": "languagearray.At(language,4)"
+					}
+				}
+			],
+			"sid": 109738678765512,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 573453803312229,
+					"parameters": {
+						"object": "startmenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "startmenu",
+					"sid": 376785054052637,
+					"parameters": {
+						"color": "rgbEx(21,255,238)"
+					}
+				}
+			],
+			"sid": 947265047477440,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 655143398435032,
+					"parameters": {
+						"object": "startmenu"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "startmenu",
+					"sid": 527548567030531,
+					"parameters": {
+						"color": "rgbEx(255,255,255)"
+					}
+				}
+			],
+			"sid": 947160172854051,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 152365786043492,
+					"parameters": {
+						"object": "starttext"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 842989741730971,
+					"parameters": {
+						"layout": "game"
+					}
+				}
+			],
+			"sid": 242931145874335,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 135751993567661,
+					"parameters": {
+						"object": "Creditstext"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 507031215190430,
+					"parameters": {
+						"layout": "credits"
+					}
+				}
+			],
+			"sid": 566849453142164,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 384164073465252,
+					"parameters": {
+						"object": "languagetext"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 364832784392613,
+					"parameters": {
+						"variable": "language",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 389094180009877,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 679445522088601,
+							"parameters": {
+								"variable": "language",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 256533210035910,
+							"parameters": {
+								"variable": "language",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 298499137211087
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "languagetext",
+							"sid": 167948203308862,
+							"parameters": {
+								"text": "languagearray.At(language,0)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "starttext",
+							"sid": 327330611816814,
+							"parameters": {
+								"text": "languagearray.At(language,1)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Creditstext",
+							"sid": 626489557154229,
+							"parameters": {
+								"text": "languagearray.At(language,2)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "tutortext",
+							"sid": 810269095520330,
+							"parameters": {
+								"text": "languagearray.At(language,3)"
+							}
+						}
+					],
+					"sid": 552315766580472
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 365368613168287,
+					"parameters": {
+						"object": "tutortext"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 278510849139386,
+					"parameters": {
+						"variable": "tutorialpage",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 793443216738329,
+					"parameters": {
+						"layout": "tutorial"
+					}
+				}
+			],
+			"sid": 293233794321657,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 323920608668060,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 694337983022135,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 220608960485317,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 280865007709688,
+					"parameters": {
+						"object": "menubutton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 304469708632682,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 201067637716833,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 942351390693669,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 270844162497734,
+					"parameters": {
+						"layout": "startmenu"
+					}
+				}
+			],
+			"sid": 210699178754609,
+			"isOrBlock": true
+		}
+	],
+	"sid": 945314861288037
+}

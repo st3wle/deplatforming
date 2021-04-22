@@ -1,0 +1,48 @@
+{
+	"name": "pin",
+	"plugin-id": "Sprite",
+	"sid": 134555857476775,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 624857423234242
+		},
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 173005069814239
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2756968,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 267266391744375,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

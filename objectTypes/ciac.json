@@ -1,0 +1,57 @@
+{
+	"name": "ciac",
+	"plugin-id": "Sprite",
+	"sid": 745050597505708,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 151,
+						"height": 66,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3683657,
+						"collisionPoly": {
+							"points": [
+								0.059602649006622516,
+								0.13636363636363635,
+								0.5,
+								0.19696969696969696,
+								0.7152317880794702,
+								0.6363636363636364,
+								0.7682119205298014,
+								0.5,
+								0.8675496688741722,
+								0.696969696969697,
+								0.5,
+								0.9090909090909091,
+								0.046357615894039736,
+								0.8787878787878788,
+								0.08609271523178808,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 827088430436586,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

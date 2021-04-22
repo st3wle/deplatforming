@@ -286,7 +286,8 @@
 						"object-name": "\"popup\"",
 						"layer": "1",
 						"x": "1200",
-						"y": "350"
+						"y": "350",
+						"create-hierarchy": false
 					}
 				},
 				{

@@ -11,10 +11,16 @@
 			"sid": 325135633399018
 		},
 		{
-			"name": "save",
+			"name": "savecs",
 			"type": "number",
 			"desc": "",
 			"sid": 658018182051998
+		},
+		{
+			"name": "saverep",
+			"type": "number",
+			"desc": "",
+			"sid": 662901201407467
 		}
 	],
 	"behaviorTypes": [],

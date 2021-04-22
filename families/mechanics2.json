@@ -1,0 +1,24 @@
+{
+	"name": "mechanics2",
+	"plugin-id": "Sprite",
+	"sid": 127710536236470,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor2",
+			"sid": 975550217440007
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin2",
+			"sid": 577419660207612
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"3strike_s2",
+		"tutmech2",
+		"tutmech3"
+	]
+}
