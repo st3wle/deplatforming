@@ -18,7 +18,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -186,7 +187,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -293,7 +295,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -454,7 +457,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -508,7 +512,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -983,7 +988,9 @@
 						"origin": "top-left"
 					},
 					"uid": 31,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"actions": 0
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1280,
@@ -1084,8 +1091,8 @@
 					"world": {
 						"x": 744,
 						"y": -120,
-						"width": 200,
-						"height": 200,
+						"width": 150,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1162,7 +1169,10 @@
 						"live-preview": false
 					},
 					"uid": 56,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"timer": 0,
+						"clickcounter": 3
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {
@@ -1206,7 +1216,9 @@
 						"live-preview": false
 					},
 					"uid": 95,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"deplat": false
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -1278,6 +1290,101 @@
 						"height": 60,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "monitoring",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 97,
+					"instanceVariables": {
+						"cooldown": false,
+						"monitoractive": false
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1474,
+						"y": -221,
+						"width": 150,
+						"height": 150,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "monitoringtxt",
+					"properties": {
+						"text": "Monitoring",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 98,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 966,
+						"y": -255,
+						"width": 120,
+						"height": 60,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

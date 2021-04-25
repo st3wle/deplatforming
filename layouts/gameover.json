@@ -58,7 +58,11 @@
 					},
 					"uid": 34,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 80,
 						"y": 80,
@@ -192,5 +196,5 @@
 	"width": 3840,
 	"height": 2160,
 	"unboundedScrolling": false,
-	"eventSheet": "gameoverevents"
+	"eventSheet": "gameevents"
 }

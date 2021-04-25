@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 395259181968737,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "deplat",
+			"type": "boolean",
+			"desc": "",
+			"sid": 950209556304020
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

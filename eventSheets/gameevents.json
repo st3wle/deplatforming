@@ -3,46 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "CSduration",
-			"type": "number",
-			"initialValue": "3",
-			"comment": "click counter for counterspeech",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 983771108304644
-		},
-		{
-			"eventType": "variable",
-			"name": "actions",
-			"type": "number",
-			"initialValue": "4",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 756395555946105
-		},
-		{
-			"eventType": "variable",
-			"name": "difficulty",
-			"type": "number",
-			"initialValue": "10",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 693726918656093
-		},
-		{
-			"eventType": "variable",
-			"name": "deplat",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 787336793767648
-		},
-		{
-			"eventType": "variable",
 			"name": "endstate",
 			"type": "number",
 			"initialValue": "0",
@@ -62,76 +22,6 @@
 			"sid": 984500390891370
 		},
 		{
-			"eventType": "variable",
-			"name": "monitor",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 700750873275313
-		},
-		{
-			"eventType": "variable",
-			"name": "timer",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 282020537840386
-		},
-		{
-			"eventType": "variable",
-			"name": "strikewin2",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 212800843414332
-		},
-		{
-			"eventType": "variable",
-			"name": "strikewin3",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 216528108102775
-		},
-		{
-			"eventType": "variable",
-			"name": "strikewin4",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 396289511558955
-		},
-		{
-			"eventType": "variable",
-			"name": "strikewin6",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 391647060561969
-		},
-		{
-			"eventType": "variable",
-			"name": "strikewin9",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 683854949982184
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -141,11 +31,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "stop-animation",
-					"objectClass": "menubutton",
-					"sid": 795100747369251
-				},
 				{
 					"id": "stop-animation",
 					"objectClass": "3strike_s2",
@@ -390,14 +275,41 @@
 					"sid": 279987706544192
 				},
 				{
+					"id": "set-boolean-instvar",
+					"objectClass": "s2",
+					"sid": 241860223243322,
+					"parameters": {
+						"instance-variable": "strikewin",
+						"value": "false"
+					}
+				},
+				{
 					"id": "stop-animation",
 					"objectClass": "s3",
 					"sid": 878740437366666
 				},
 				{
+					"id": "set-boolean-instvar",
+					"objectClass": "s3",
+					"sid": 817154291415686,
+					"parameters": {
+						"instance-variable": "strikewin",
+						"value": "false"
+					}
+				},
+				{
 					"id": "stop-animation",
 					"objectClass": "s4",
 					"sid": 357671480165892
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "s4",
+					"sid": 645910100511688,
+					"parameters": {
+						"instance-variable": "strikewin",
+						"value": "false"
+					}
 				},
 				{
 					"id": "stop-animation",
@@ -408,6 +320,15 @@
 					"id": "stop-animation",
 					"objectClass": "s6",
 					"sid": 616330532827773
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "s6",
+					"sid": 729239321320904,
+					"parameters": {
+						"instance-variable": "strikewin",
+						"value": "false"
+					}
 				},
 				{
 					"id": "stop-animation",
@@ -425,17 +346,91 @@
 					"sid": 518728575314524
 				},
 				{
+					"id": "set-boolean-instvar",
+					"objectClass": "s9",
+					"sid": 706553353530247,
+					"parameters": {
+						"instance-variable": "strikewin",
+						"value": "false"
+					}
+				},
+				{
 					"id": "stop-animation",
 					"objectClass": "s10",
 					"sid": 416814049327821
 				},
 				{
-					"id": "request-project-file",
-					"objectClass": "AJAX",
-					"sid": 576983717611298,
+					"id": "stop-animation",
+					"objectClass": "activistbutton",
+					"sid": 823791456144655
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "deplatforming",
+					"sid": 114997536990551
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "deplatforming",
+					"sid": 695853030711168,
 					"parameters": {
-						"tag": "\"text\"",
-						"file": "language.json"
+						"instance-variable": "deplat",
+						"value": "false"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "monitoring",
+					"sid": 534942338040200
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "monitoring",
+					"sid": 330280634163485,
+					"parameters": {
+						"instance-variable": "monitoractive",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "monitoring",
+					"sid": 686960433254220,
+					"parameters": {
+						"instance-variable": "cooldown",
+						"value": "false"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "menubutton",
+					"sid": 313466021153123
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "toxic",
+					"sid": 778360510606076,
+					"parameters": {
+						"instance-variable": "clickcounter",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "activistsavail",
+					"sid": 642994274115164,
+					"parameters": {
+						"instance-variable": "actions",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "toxic",
+					"sid": 438261070301478,
+					"parameters": {
+						"instance-variable": "timer",
+						"value": "0"
 					}
 				},
 				{
@@ -484,130 +479,12 @@
 					}
 				},
 				{
-					"id": "stop-animation",
-					"objectClass": "activistbutton",
-					"sid": 823791456144655
-				},
-				{
-					"id": "stop-animation",
-					"objectClass": "deplatforming",
-					"sid": 114997536990551
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 149112365976644,
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 669050347998004,
 					"parameters": {
-						"variable": "CSduration",
-						"value": "3"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 312998720880528,
-					"parameters": {
-						"variable": "actions",
-						"value": "4"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 562288099663046,
-					"parameters": {
-						"variable": "difficulty",
-						"value": "10"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 161834465347720,
-					"parameters": {
-						"variable": "endstate",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 336659287644076,
-					"parameters": {
-						"variable": "hint",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 143517008348537,
-					"parameters": {
-						"variable": "timer",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 964010626022792,
-					"parameters": {
-						"variable": "deplat",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 839280966346294,
-					"parameters": {
-						"variable": "monitor",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 562851650868506,
-					"parameters": {
-						"variable": "strikewin2",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 624918761134148,
-					"parameters": {
-						"variable": "strikewin3",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 173332957689188,
-					"parameters": {
-						"variable": "strikewin4",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 688000990535512,
-					"parameters": {
-						"variable": "strikewin6",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 428322549104009,
-					"parameters": {
-						"variable": "strikewin9",
-						"value": "false"
+						"tag": "\"tracker\"",
+						"file": "tracker.json"
 					}
 				}
 			],
@@ -619,9 +496,9 @@
 				{
 					"id": "on-completed",
 					"objectClass": "AJAX",
-					"sid": 358159467201173,
+					"sid": 512891559844221,
 					"parameters": {
-						"tag": "\"text\""
+						"tag": "\"tracker\""
 					}
 				}
 			],
@@ -629,65 +506,21 @@
 				{
 					"id": "parse",
 					"objectClass": "JSON",
-					"sid": 944825985626330,
+					"sid": 602407979136658,
 					"parameters": {
 						"data": "AJAX.LastData"
 					}
 				},
 				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 932283975260068
-				},
-				{
 					"id": "load",
-					"objectClass": "languagearray",
-					"sid": 784997139700708,
+					"objectClass": "tracker",
+					"sid": 547589479882553,
 					"parameters": {
 						"json": "AJAX.LastData"
 					}
 				}
 			],
-			"sid": 238643022777337,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "request-project-file",
-							"objectClass": "AJAX",
-							"sid": 450981117161445,
-							"parameters": {
-								"tag": "\"tracker\"",
-								"file": "tracker.json"
-							}
-						},
-						{
-							"id": "parse",
-							"objectClass": "JSON",
-							"sid": 602407979136658,
-							"parameters": {
-								"data": "AJAX.LastData"
-							}
-						},
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 932283975260068
-						},
-						{
-							"id": "load",
-							"objectClass": "tracker",
-							"sid": 547589479882553,
-							"parameters": {
-								"json": "AJAX.LastData"
-							}
-						}
-					],
-					"sid": 912792894913391
-				}
-			]
+			"sid": 420147963913287
 		},
 		{
 			"eventType": "comment",
@@ -705,9 +538,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 213357498686857,
+					"sid": 955143277344491,
 					"parameters": {
-						"interval-seconds": "difficulty"
+						"interval-seconds": "8"
 					}
 				}
 			],
@@ -715,10 +548,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "s1",
-					"sid": 808350914903752,
+					"sid": 687833093106566,
 					"parameters": {
 						"instance-variable": "randomize",
-						"value": "round(random(-1.4,9.4))"
+						"value": "round(random(1.6,10.4))"
 					}
 				}
 			],
@@ -728,19 +561,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "while",
-							"objectClass": "System",
-							"sid": 865385430730534
-						},
-						{
-							"id": "compare-at-xy",
-							"objectClass": "tracker",
-							"sid": 359570866571626,
+							"id": "compare-instance-variable",
+							"objectClass": "s1",
+							"sid": 184551181309820,
 							"parameters": {
-								"x": "s1.randomize",
-								"y": "3",
+								"instance-variable": "randomize",
 								"comparison": 5,
-								"value": "tracker.At(s1.randomize,4)"
+								"value": "9.5"
 							}
 						}
 					],
@@ -748,29 +575,18 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "s1",
-							"sid": 312809382619370,
+							"sid": 411521985111049,
 							"parameters": {
 								"instance-variable": "randomize",
-								"value": "round(random(-1.4,9.4))"
+								"value": "0"
 							}
 						}
 					],
-					"sid": 104898559287230
+					"sid": 668586025921133
 				},
 				{
 					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "s1",
-							"sid": 897133459699190,
-							"parameters": {
-								"instance-variable": "randomize",
-								"comparison": 1,
-								"value": "1"
-							}
-						}
-					],
+					"conditions": [],
 					"actions": [
 						{
 							"id": "spawn-another-object",
@@ -1090,6 +906,17 @@
 								"comparison": 5,
 								"value": "1"
 							}
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "tracker",
+							"sid": 155252315513298,
+							"parameters": {
+								"x": "9",
+								"y": "0",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
@@ -1126,17 +953,6 @@
 							"sid": 352316510355432,
 							"parameters": {
 								"x": "0",
-								"y": "0",
-								"comparison": 0,
-								"value": "0"
-							}
-						},
-						{
-							"id": "compare-at-xy",
-							"objectClass": "tracker",
-							"sid": 381841034284331,
-							"parameters": {
-								"x": "9",
 								"y": "0",
 								"comparison": 0,
 								"value": "0"
@@ -1193,10 +1009,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "s1",
-					"sid": 453209161171270,
+					"sid": 588893569068055,
 					"parameters": {
 						"instance-variable": "randomize",
-						"value": "round(random(-0.4,9.4))"
+						"value": "round(random(1.6,10.4))"
 					}
 				}
 			],
@@ -1206,30 +1022,13 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "while",
-							"objectClass": "System",
-							"sid": 408854720202999
-						},
-						{
-							"id": "compare-at-xy",
-							"objectClass": "tracker",
-							"sid": 487282881379275,
+							"id": "compare-instance-variable",
+							"objectClass": "s1",
+							"sid": 438326979012021,
 							"parameters": {
-								"x": "s1.randomize",
-								"y": "3",
+								"instance-variable": "randomize",
 								"comparison": 5,
-								"value": "tracker.At(s1.randomize,4)"
-							}
-						},
-						{
-							"id": "compare-at-xy",
-							"objectClass": "tracker",
-							"sid": 910027745842776,
-							"parameters": {
-								"x": "s1.randomize",
-								"y": "0",
-								"comparison": 1,
-								"value": "0"
+								"value": "9.5"
 							}
 						}
 					],
@@ -1237,28 +1036,18 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "s1",
-							"sid": 374797580427652,
+							"sid": 547417513439563,
 							"parameters": {
 								"instance-variable": "randomize",
-								"value": "round(random(-0.4,9.4))"
+								"value": "0"
 							}
 						}
 					],
-					"sid": 277121783855352
+					"sid": 163625820990931
 				},
 				{
 					"eventType": "block",
 					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "s1",
-							"sid": 303225445993402,
-							"parameters": {
-								"instance-variable": "randomize",
-								"comparison": 1,
-								"value": "1"
-							}
-						},
 						{
 							"id": "compare-at-xy",
 							"objectClass": "tracker",
@@ -1268,17 +1057,6 @@
 								"y": "3",
 								"comparison": 2,
 								"value": "tracker.At(s1.randomize,4)"
-							}
-						},
-						{
-							"id": "compare-at-xy",
-							"objectClass": "tracker",
-							"sid": 527664278326262,
-							"parameters": {
-								"x": "s1.randomize",
-								"y": "0",
-								"comparison": 0,
-								"value": "0"
 							}
 						},
 						{
@@ -1363,45 +1141,45 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 207096540410735,
+									"sid": 151678912837104,
 									"parameters": {
 										"x": "s2.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s2.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 224824184891990,
-									"parameters": {
-										"x": "s2.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 287510142076444,
+									"sid": 467384253168273,
 									"parameters": {
 										"x": "s2.randomize",
 										"y": "1",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 858875034926792,
+									"sid": 286780127945452,
+									"parameters": {
+										"x": "s2.randomize",
+										"y": "1",
+										"comparison": 3,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "tracker",
+									"sid": 751001640499153,
 									"parameters": {
 										"x": "2",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
@@ -1488,45 +1266,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 717271741630165,
+									"sid": 667397196450822,
 									"parameters": {
 										"x": "s3.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s3.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 417989281070089,
-									"parameters": {
-										"x": "s3.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 250350758100650,
+									"sid": 456922893151927,
 									"parameters": {
 										"x": "s3.randomize",
 										"y": "1",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 111641327941350,
+									"sid": 813416040873254,
 									"parameters": {
 										"x": "3",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
@@ -1613,45 +1380,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 113923426741058,
+									"sid": 772444973182802,
 									"parameters": {
 										"x": "s4.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s4.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 361694045864023,
-									"parameters": {
-										"x": "s4.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 952037549607085,
+									"sid": 156867018929340,
 									"parameters": {
 										"x": "s4.randomize",
 										"y": "1",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 594588589359482,
+									"sid": 345881114086659,
 									"parameters": {
 										"x": "4",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
@@ -1738,34 +1494,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 315017172754408,
+									"sid": 947985369022277,
 									"parameters": {
 										"x": "s5.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s5.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 814140860944523,
+									"sid": 535439763173926,
 									"parameters": {
 										"x": "s5.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"y": "1",
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 949042114527055,
+									"sid": 684943103242179,
 									"parameters": {
 										"x": "5",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								}
 							],
@@ -1841,45 +1597,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 389073097763817,
+									"sid": 932930817451863,
 									"parameters": {
 										"x": "s6.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s6.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 320032533159872,
-									"parameters": {
-										"x": "s6.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 601398310056095,
+									"sid": 443198992930227,
 									"parameters": {
 										"x": "s6.randomize",
 										"y": "1",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 663399147432206,
+									"sid": 889410917420004,
 									"parameters": {
 										"x": "6",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
@@ -1966,34 +1711,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 149883814176047,
+									"sid": 194433070034118,
 									"parameters": {
 										"x": "s7.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s7.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 444981383431681,
+									"sid": 995721465583875,
 									"parameters": {
 										"x": "s7.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"y": "1",
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 170516330358640,
+									"sid": 181191871881244,
 									"parameters": {
 										"x": "7",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								}
 							],
@@ -2069,34 +1814,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 112351894584599,
+									"sid": 126745524792523,
 									"parameters": {
 										"x": "s8.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s8.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 484897394174612,
+									"sid": 414601267117315,
 									"parameters": {
 										"x": "s8.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"y": "1",
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 308455103524384,
+									"sid": 940954644674042,
 									"parameters": {
 										"x": "8",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								}
 							],
@@ -2172,45 +1917,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 652459821938944,
+									"sid": 108209926049927,
 									"parameters": {
 										"x": "s9.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s9.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 349106530943681,
-									"parameters": {
-										"x": "s9.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 679975791579796,
+									"sid": 219446868904767,
 									"parameters": {
 										"x": "s9.randomize",
 										"y": "1",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 937783518412904,
+									"sid": 146333354320204,
 									"parameters": {
 										"x": "9",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
@@ -2297,34 +2031,34 @@
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 938597433643865,
+									"sid": 455848882376043,
 									"parameters": {
 										"x": "s10.randomize",
 										"y": "3",
-										"comparison": 3,
+										"comparison": 2,
 										"value": "tracker.At(s10.randomize,4)"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 518888877453066,
+									"sid": 776840304308547,
 									"parameters": {
 										"x": "s10.randomize",
-										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"y": "1",
+										"comparison": 3,
+										"value": "1"
 									}
 								},
 								{
 									"id": "compare-at-xy",
 									"objectClass": "tracker",
-									"sid": 182787244551915,
+									"sid": 891918064081714,
 									"parameters": {
 										"x": "0",
 										"y": "0",
-										"comparison": 0,
-										"value": "0"
+										"comparison": 3,
+										"value": "1"
 									}
 								}
 							],
@@ -2456,17 +2190,6 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 386210622104308,
-					"parameters": {
-						"x": "2",
-						"y": "0",
-						"comparison": 3,
-						"value": "1"
-					}
-				},
-				{
-					"id": "compare-at-xy",
-					"objectClass": "tracker",
 					"sid": 627330607938186,
 					"parameters": {
 						"x": "2",
@@ -2515,17 +2238,6 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 805683042955098,
-					"parameters": {
-						"x": "3",
-						"y": "0",
-						"comparison": 3,
-						"value": "1"
-					}
-				},
-				{
-					"id": "compare-at-xy",
-					"objectClass": "tracker",
 					"sid": 677154052557662,
 					"parameters": {
 						"x": "3",
@@ -2569,17 +2281,6 @@
 					"sid": 906928004956962,
 					"parameters": {
 						"object": "s4"
-					}
-				},
-				{
-					"id": "compare-at-xy",
-					"objectClass": "tracker",
-					"sid": 681205992946049,
-					"parameters": {
-						"x": "4",
-						"y": "0",
-						"comparison": 3,
-						"value": "1"
 					}
 				},
 				{
@@ -2687,17 +2388,6 @@
 					"sid": 121983239934698,
 					"parameters": {
 						"object": "s6"
-					}
-				},
-				{
-					"id": "compare-at-xy",
-					"objectClass": "tracker",
-					"sid": 589532175868167,
-					"parameters": {
-						"x": "6",
-						"y": "0",
-						"comparison": 3,
-						"value": "1"
 					}
 				},
 				{
@@ -2864,17 +2554,6 @@
 					"sid": 643534642314485,
 					"parameters": {
 						"object": "s9"
-					}
-				},
-				{
-					"id": "compare-at-xy",
-					"objectClass": "tracker",
-					"sid": 853259947320794,
-					"parameters": {
-						"x": "9",
-						"y": "0",
-						"comparison": 3,
-						"value": "1"
 					}
 				},
 				{
@@ -3221,7 +2900,7 @@
 				{
 					"id": "compare-at-xy",
 					"objectClass": "tracker",
-					"sid": 401128405012141,
+					"sid": 265491238540867,
 					"parameters": {
 						"x": "0",
 						"y": "3",
@@ -3568,9 +3247,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "activistsavail",
-					"sid": 916643941832283,
+					"sid": 915166812553042,
 					"parameters": {
-						"text": "languagearray.At(language,32) & actions"
+						"text": "languagearray.At(language,32) & activistsavail.actions"
 					}
 				},
 				{
@@ -4026,6 +3705,57 @@
 			"sid": 510377950525214
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 261312279384535,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 874724504209392,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 534085399249307,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 430212012877625,
+					"parameters": {
+						"object": "menubutton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "menubutton",
+					"sid": 437679741803179,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 305658702806431,
+			"isOrBlock": true
+		},
+		{
 			"eventType": "comment",
 			"text": "ACTIONS/ACTIVISTS",
 			"text-color": [
@@ -4144,11 +3874,11 @@
 					}
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 736567640301089,
+					"id": "compare-instance-variable",
+					"objectClass": "activistsavail",
+					"sid": 368742436178971,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"comparison": 4,
 						"value": "0"
 					}
@@ -4167,11 +3897,11 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 904987054217948,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 526606096716157,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "-1"
 					}
 				},
@@ -4296,11 +4026,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 380460010275665,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 476847209735280,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "2"
 					}
 				}
@@ -4419,11 +4149,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 178293857455804,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 110393332839552,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -4434,11 +4164,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 395304315139806,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "s2",
+									"sid": 206379137382007,
 									"parameters": {
-										"variable": "strikewin2"
+										"instance-variable": "strikewin"
 									}
 								}
 							],
@@ -4584,11 +4314,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 728560710822038,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 339408842496052,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -4599,11 +4329,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 209606802014882,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "s3",
+									"sid": 601599866710001,
 									"parameters": {
-										"variable": "strikewin3"
+										"instance-variable": "strikewin"
 									}
 								}
 							],
@@ -4749,11 +4479,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 191829182761283,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 573328377028856,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -4764,11 +4494,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 672744255601444,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "s4",
+									"sid": 637577541001546,
 									"parameters": {
-										"variable": "strikewin4"
+										"instance-variable": "strikewin"
 									}
 								}
 							],
@@ -4914,11 +4644,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 450908370704362,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 829814755290988,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -4929,11 +4659,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 716442999447746,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "s6",
+									"sid": 719438627703439,
 									"parameters": {
-										"variable": "strikewin6"
+										"instance-variable": "strikewin"
 									}
 								}
 							],
@@ -5079,11 +4809,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 514217330562423,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 837390799489160,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -5094,11 +4824,11 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 387777174984715,
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "s9",
+									"sid": 989047221146971,
 									"parameters": {
-										"variable": "strikewin9"
+										"instance-variable": "strikewin"
 									}
 								}
 							],
@@ -5350,11 +5080,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 883903517051257,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 217087449229928,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -5561,11 +5291,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 345131328013268,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 806797346577418,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -5772,11 +5502,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 379195521522650,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 190579374375595,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -5983,11 +5713,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 982573736847294,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 808400453111357,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -6194,11 +5924,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 327482047127714,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 792866422822397,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -6405,11 +6135,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 914223075900045,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 893882960461513,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -6616,11 +6346,11 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 565927859938241,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 419313163221649,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "1"
 							}
 						}
@@ -6660,11 +6390,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 289325167551183,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 356133599449887,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -6705,11 +6435,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 813277324156054,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 684676213773158,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -6726,11 +6456,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 843174823696401,
+							"sid": 896362042504556,
 							"parameters": {
 								"x": "2",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -6786,11 +6516,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 718701564333011,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 597179233879068,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -6831,11 +6561,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 770060551921906,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 745072981704193,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -6852,11 +6582,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 817661553462218,
+							"sid": 412031795723269,
 							"parameters": {
 								"x": "3",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -6912,11 +6642,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 960679464759114,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 181404056252621,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -6957,11 +6687,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 417727329415191,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 477497776493166,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -6978,11 +6708,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 762673288526188,
+							"sid": 786555413242581,
 							"parameters": {
 								"x": "4",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7038,11 +6768,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 629039471074766,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 149572925473402,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -7072,11 +6802,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 584004800402828,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 689400229201017,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -7093,11 +6823,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 264434399971722,
+							"sid": 300275780859073,
 							"parameters": {
 								"x": "5",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7153,11 +6883,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 199548831497119,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 201322147934329,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -7198,11 +6928,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 792655238135968,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 376887428298803,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -7219,11 +6949,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 934965101122600,
+							"sid": 498419188511813,
 							"parameters": {
 								"x": "6",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7279,11 +7009,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 757644705933373,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 961450215651947,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -7313,11 +7043,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 403047770095075,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 576221928529404,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -7334,11 +7064,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 390989608910539,
+							"sid": 545680480174876,
 							"parameters": {
 								"x": "7",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7394,11 +7124,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 451102706243415,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 792232817418923,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -7428,11 +7158,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 462158072126771,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 591555821332024,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -7449,11 +7179,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 486881726031156,
+							"sid": 774061745412884,
 							"parameters": {
 								"x": "8",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7509,11 +7239,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 884049126985720,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 374244121580404,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -7554,11 +7284,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 487662435748171,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 420601883237447,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -7575,11 +7305,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 870891341543607,
+							"sid": 247789857112522,
 							"parameters": {
 								"x": "9",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7635,11 +7365,11 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 237314221762220,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 951745515659879,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 4,
 								"value": "0"
 							}
@@ -7669,11 +7399,11 @@
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 905129703014075,
+							"id": "add-to-instvar",
+							"objectClass": "activistsavail",
+							"sid": 180339604020301,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"value": "-1"
 							}
 						},
@@ -7690,11 +7420,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 777303642657943,
+							"sid": 785727662482494,
 							"parameters": {
 								"x": "0",
 								"y": "5",
-								"value": "CSduration"
+								"value": "toxic.clickcounter"
 							}
 						},
 						{
@@ -7775,11 +7505,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 479476536402262,
+							"sid": 399364147454264,
 							"parameters": {
 								"x": "2",
 								"y": "3",
-								"value": "tracker.At(2,3)-1"
+								"value": "tracker.At(2,3)-2"
 							}
 						}
 					],
@@ -7814,11 +7544,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 168512414197973,
+							"sid": 846594827584630,
 							"parameters": {
 								"x": "3",
 								"y": "3",
-								"value": "tracker.At(3,3)-1"
+								"value": "tracker.At(3,3)-2"
 							}
 						}
 					],
@@ -7853,11 +7583,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 719433956383835,
+							"sid": 718623706078229,
 							"parameters": {
 								"x": "4",
 								"y": "3",
-								"value": "tracker.At(4,3)-1"
+								"value": "tracker.At(4,3)-2"
 							}
 						}
 					],
@@ -7892,11 +7622,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 695668714269659,
+							"sid": 254442951173718,
 							"parameters": {
 								"x": "5",
 								"y": "3",
-								"value": "tracker.At(5,3)-1"
+								"value": "tracker.At(5,3)-2"
 							}
 						}
 					],
@@ -7931,11 +7661,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 381007965332035,
+							"sid": 919377918584460,
 							"parameters": {
 								"x": "6",
 								"y": "3",
-								"value": "tracker.At(6,3)-1"
+								"value": "tracker.At(6,3)-2"
 							}
 						}
 					],
@@ -7970,11 +7700,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 730780984740030,
+							"sid": 565853995008586,
 							"parameters": {
 								"x": "7",
 								"y": "3",
-								"value": "tracker.At(7,3)-1"
+								"value": "tracker.At(7,3)-2"
 							}
 						}
 					],
@@ -8009,11 +7739,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 700049268317842,
+							"sid": 687900970156167,
 							"parameters": {
 								"x": "8",
 								"y": "3",
-								"value": "tracker.At(8,3)-1"
+								"value": "tracker.At(8,3)-2"
 							}
 						}
 					],
@@ -8048,11 +7778,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 860463189604688,
+							"sid": 266171207725750,
 							"parameters": {
 								"x": "9",
 								"y": "3",
-								"value": "tracker.At(9,3)-1"
+								"value": "tracker.At(9,3)-2"
 							}
 						}
 					],
@@ -8087,11 +7817,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "tracker",
-							"sid": 945324060914455,
+							"sid": 216021380033416,
 							"parameters": {
 								"x": "0",
 								"y": "3",
-								"value": "tracker.At(0,3)-1"
+								"value": "tracker.At(0,3)-2"
 							}
 						}
 					],
@@ -8138,11 +7868,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 925326846994462,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 876043500580227,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8210,11 +7940,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 193342522052715,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 175480950538861,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8282,11 +8012,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 279703437205554,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 771687015405232,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8354,11 +8084,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 914037658292467,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 746573482722715,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8426,11 +8156,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 265088346902458,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 340150375908947,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8498,11 +8228,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 258995539376882,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 319130841642592,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8570,11 +8300,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 771677123621309,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 347902444272192,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8642,11 +8372,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 420282380650831,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 550475300787168,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8714,11 +8444,11 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 557916871121538,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 637673908296852,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
@@ -8762,26 +8492,35 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 128541112614729,
+					"id": "compare-instance-variable",
+					"objectClass": "activistsavail",
+					"sid": 997964787687721,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"comparison": 0,
 						"value": "7"
 					}
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 380015762242066,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "monitoring",
+					"sid": 457818505105407,
 					"parameters": {
-						"variable": "monitor"
+						"instance-variable": "monitoractive"
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "monitoring",
+					"sid": 139120526006219,
+					"parameters": {
+						"instance-variable": "monitoractive",
+						"value": "true"
+					}
+				},
 				{
 					"id": "push",
 					"objectClass": "ticker_content",
@@ -8793,89 +8532,50 @@
 					}
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 560297281688278,
-					"parameters": {
-						"object-to-create": "monitoring",
-						"layer": "0",
-						"x": "1550",
-						"y": "700",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "monitoring",
-					"sid": 785677481298481,
-					"parameters": {
-						"width": "150",
-						"height": "150"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 915098361050198,
-					"parameters": {
-						"object-to-create": "monitoringtxt",
-						"layer": "1",
-						"x": "1500",
-						"y": "700",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-font-color",
+					"id": "set-position",
 					"objectClass": "monitoringtxt",
-					"sid": 873012284248264,
+					"sid": 563076947585383,
 					"parameters": {
-						"color": "rgbEx(255,255,255)"
+						"x": "1490",
+						"y": "675"
 					}
 				},
 				{
-					"id": "set-horizontal-alignment",
-					"objectClass": "monitoringtxt",
-					"sid": 546427787570574,
-					"parameters": {
-						"horizontal-alignment": "center"
-					}
-				},
-				{
-					"id": "set-font-size",
-					"objectClass": "monitoringtxt",
-					"sid": 160882641527255,
-					"parameters": {
-						"size-pt": "15"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "monitoring",
-					"sid": 371263913222199,
-					"parameters": {
-						"frame-number": "0"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "endhint",
-					"sid": 986827499045474,
-					"parameters": {
-						"text": "languagearray.At(language,57)"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 607056461252026,
+					"sid": 290383735902001,
 					"parameters": {
-						"variable": "monitor",
-						"value": "true"
+						"variable": "hint",
+						"value": "1"
 					}
 				}
 			],
 			"sid": 353202577869933
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "monitoring",
+					"sid": 425415939375374,
+					"parameters": {
+						"instance-variable": "monitoractive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "monitoring",
+					"sid": 184523972128122,
+					"parameters": {
+						"x": "1550",
+						"y": "700"
+					}
+				}
+			],
+			"sid": 312435524231474
 		},
 		{
 			"eventType": "block",
@@ -8889,11 +8589,11 @@
 					}
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 380902849506361,
+					"id": "compare-instance-variable",
+					"objectClass": "activistsavail",
+					"sid": 872843155570022,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"comparison": 4,
 						"value": "0"
 					}
@@ -8910,11 +8610,11 @@
 					}
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 378476859993540,
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 398531209982348,
 					"parameters": {
-						"variable": "CSduration",
+						"instance-variable": "clickcounter",
 						"comparison": 2,
 						"value": "7"
 					}
@@ -8922,11 +8622,11 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 934121674512039,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 900503566850607,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "-1"
 					}
 				},
@@ -9041,25 +8741,51 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 742157052106216,
+					"id": "add-to-instvar",
+					"objectClass": "toxic",
+					"sid": 193807718615891,
 					"parameters": {
-						"variable": "CSduration",
+						"instance-variable": "clickcounter",
 						"value": "1"
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 112777513880839,
+					"id": "add-to-instvar",
+					"objectClass": "activistsavail",
+					"sid": 783922131294115,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"value": "1"
 					}
 				}
 			],
 			"sid": 530686351815188
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 869444678265935,
+					"parameters": {
+						"instance-variable": "clickcounter",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "monitoring",
+					"sid": 110268182474370,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 244748491608319
 		},
 		{
 			"eventType": "block",
@@ -9087,15 +8813,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-position",
-							"objectClass": "monitoringtxt",
-							"sid": 706658148405203,
-							"parameters": {
-								"x": "1500",
-								"y": "690"
-							}
-						},
-						{
 							"id": "set-text",
 							"objectClass": "monitoringtxt",
 							"sid": 495193260030304,
@@ -9109,6 +8826,15 @@
 							"sid": 538752464608952,
 							"parameters": {
 								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "monitoringtxt",
+							"sid": 271943078695190,
+							"parameters": {
+								"x": "1490",
+								"y": "690"
 							}
 						}
 					],
@@ -9130,88 +8856,100 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 477868095052863,
+									"id": "compare-instance-variable",
+									"objectClass": "toxic",
+									"sid": 993657767668235,
 									"parameters": {
-										"first-value": "CSduration",
-										"comparison": 0,
-										"second-value": "7"
-									},
-									"isInverted": true
+										"instance-variable": "clickcounter",
+										"comparison": 2,
+										"value": "7"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "monitoring",
+									"sid": 799566940315479,
+									"parameters": {
+										"instance-variable": "monitoractive"
+									}
 								}
 							],
 							"actions": [
 								{
 									"id": "set-text",
 									"objectClass": "monitoringtxt",
-									"sid": 756908533590915,
+									"sid": 900391477726787,
 									"parameters": {
-										"text": "languagearray.At(language,46) & \" \" & CSduration-2"
+										"text": "languagearray.At(language,46) & \" \" & toxic.clickcounter-2"
 									}
 								},
 								{
 									"id": "set-position",
 									"objectClass": "monitoringtxt",
-									"sid": 881409278985531,
+									"sid": 981268274335435,
 									"parameters": {
-										"x": "1500",
-										"y": "665"
+										"x": "1490",
+										"y": "675"
 									}
 								},
 								{
 									"id": "set-animation-frame",
 									"objectClass": "monitoring",
-									"sid": 591044499776557,
+									"sid": 846672468485544,
 									"parameters": {
 										"frame-number": "0"
 									}
 								}
 							],
-							"sid": 978607815497231
+							"sid": 869424605954354
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-two-values",
+									"id": "else",
 									"objectClass": "System",
-									"sid": 115349437435682,
+									"sid": 382726148101889
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "toxic",
+									"sid": 134387570285377,
 									"parameters": {
-										"first-value": "CSduration",
+										"instance-variable": "clickcounter",
 										"comparison": 0,
-										"second-value": "7"
+										"value": "7"
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "set-position",
-									"objectClass": "monitoringtxt",
-									"sid": 351152177380146,
-									"parameters": {
-										"x": "1500",
-										"y": "690"
-									}
-								},
-								{
 									"id": "set-text",
 									"objectClass": "monitoringtxt",
-									"sid": 573432187697405,
+									"sid": 534233235667308,
 									"parameters": {
-										"text": "languagearray.At(language,46) & \" \" & CSduration-3"
+										"text": "languagearray.At(language,46)"
 									}
 								},
 								{
 									"id": "set-animation-frame",
 									"objectClass": "monitoring",
-									"sid": 661638478428182,
+									"sid": 844449159868902,
 									"parameters": {
 										"frame-number": "1"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "monitoringtxt",
+									"sid": 379265840049282,
+									"parameters": {
+										"x": "1490",
+										"y": "700"
+									}
 								}
 							],
-							"sid": 869424605954354
+							"sid": 190904032114696
 						}
 					]
 				}
@@ -9221,32 +8959,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 582728766708864,
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 800196134786785,
 					"parameters": {
-						"first-value": "CSduration",
+						"instance-variable": "clickcounter",
 						"comparison": 0,
-						"second-value": "7"
+						"value": "7"
 					}
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 135981406123204,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "s2",
+					"sid": 494427724570433,
 					"parameters": {
-						"variable": "strikewin2"
+						"instance-variable": "strikewin"
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 490569394475999,
+					"id": "set-boolean-instvar",
+					"objectClass": "s2",
+					"sid": 987096029950512,
 					"parameters": {
-						"variable": "strikewin2",
+						"instance-variable": "strikewin",
 						"value": "true"
 					}
 				},
@@ -9278,13 +9016,13 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 384819056242086,
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 855461751181407,
 					"parameters": {
-						"first-value": "CSduration",
+						"instance-variable": "clickcounter",
 						"comparison": 0,
-						"second-value": "6"
+						"value": "6"
 					}
 				}
 			],
@@ -9295,22 +9033,69 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 689920943881449,
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "s9",
+							"sid": 260611300022664,
 							"parameters": {
-								"variable": "strikewin3"
+								"instance-variable": "strikewin"
 							},
 							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 254264657568779,
+							"id": "set-boolean-instvar",
+							"objectClass": "s9",
+							"sid": 684704557753498,
 							"parameters": {
-								"variable": "strikewin3",
+								"instance-variable": "strikewin",
+								"value": "true"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 401660402432383,
+							"parameters": {
+								"object-to-create": "3strike_s9",
+								"layer": "0",
+								"x": "50",
+								"y": "630",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "3strike_s9",
+							"sid": 158546979521216,
+							"parameters": {
+								"width": "40",
+								"height": "33.4"
+							}
+						}
+					],
+					"sid": 545236321690379
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "s3",
+							"sid": 673548871763772,
+							"parameters": {
+								"instance-variable": "strikewin"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "s3",
+							"sid": 960058954399806,
+							"parameters": {
+								"instance-variable": "strikewin",
 								"value": "true"
 							}
 						},
@@ -9337,53 +9122,6 @@
 						}
 					],
 					"sid": 278507684071651
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 990239011751993,
-							"parameters": {
-								"variable": "strikewin9"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 404395122374708,
-							"parameters": {
-								"variable": "strikewin9",
-								"value": "true"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 433653679528383,
-							"parameters": {
-								"object-to-create": "3strike_s9",
-								"layer": "0",
-								"x": "50",
-								"y": "630",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "3strike_s9",
-							"sid": 276398351338636,
-							"parameters": {
-								"width": "40",
-								"height": "33.4"
-							}
-						}
-					],
-					"sid": 795657868657864
 				}
 			]
 		},
@@ -9391,32 +9129,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 311198729008594,
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 178463768339598,
 					"parameters": {
-						"first-value": "CSduration",
+						"instance-variable": "clickcounter",
 						"comparison": 0,
-						"second-value": "5"
+						"value": "5"
 					}
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 785466080841109,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "s4",
+					"sid": 280849419450178,
 					"parameters": {
-						"variable": "strikewin4"
+						"instance-variable": "strikewin"
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 877948470755473,
+					"id": "set-boolean-instvar",
+					"objectClass": "s4",
+					"sid": 715420826598580,
 					"parameters": {
-						"variable": "strikewin4",
+						"instance-variable": "strikewin",
 						"value": "true"
 					}
 				},
@@ -9448,32 +9186,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 717357316436146,
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 270319928132219,
 					"parameters": {
-						"first-value": "CSduration",
+						"instance-variable": "clickcounter",
 						"comparison": 0,
-						"second-value": "4"
+						"value": "4"
 					}
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 128673032633490,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "s6",
+					"sid": 818378158019455,
 					"parameters": {
-						"variable": "strikewin6"
+						"instance-variable": "strikewin"
 					},
 					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 477674938724409,
+					"id": "set-boolean-instvar",
+					"objectClass": "s6",
+					"sid": 907105871854546,
 					"parameters": {
-						"variable": "strikewin6",
+						"instance-variable": "strikewin",
 						"value": "true"
 					}
 				},
@@ -9559,11 +9297,11 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 474992833694928,
+					"id": "set-boolean-instvar",
+					"objectClass": "deplatforming",
+					"sid": 466651932818264,
 					"parameters": {
-						"variable": "deplat",
+						"instance-variable": "deplat",
 						"value": "true"
 					}
 				}
@@ -9618,11 +9356,11 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 197606602629304,
+					"id": "set-boolean-instvar",
+					"objectClass": "deplatforming",
+					"sid": 775259845373957,
 					"parameters": {
-						"variable": "deplat",
+						"instance-variable": "deplat",
 						"value": "true"
 					}
 				}
@@ -9677,11 +9415,11 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 130301778241941,
+					"id": "set-boolean-instvar",
+					"objectClass": "deplatforming",
+					"sid": 489331569332914,
 					"parameters": {
-						"variable": "deplat",
+						"instance-variable": "deplat",
 						"value": "true"
 					}
 				}
@@ -9736,11 +9474,11 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 118142583951481,
+					"id": "set-boolean-instvar",
+					"objectClass": "deplatforming",
+					"sid": 399335342343657,
 					"parameters": {
-						"variable": "deplat",
+						"instance-variable": "deplat",
 						"value": "true"
 					}
 				}
@@ -9795,11 +9533,11 @@
 					}
 				},
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 486626294556462,
+					"id": "set-boolean-instvar",
+					"objectClass": "deplatforming",
+					"sid": 424278383114518,
 					"parameters": {
-						"variable": "deplat",
+						"instance-variable": "deplat",
 						"value": "true"
 					}
 				}
@@ -9810,11 +9548,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 516489120269905,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "deplatforming",
+					"sid": 742013898593291,
 					"parameters": {
-						"variable": "deplat"
+						"instance-variable": "deplat"
 					}
 				}
 			],
@@ -10022,11 +9760,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 411551823974706,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "deplatforming",
+					"sid": 497054420115587,
 					"parameters": {
-						"variable": "deplat"
+						"instance-variable": "deplat"
 					},
 					"isInverted": true
 				}
@@ -10056,19 +9794,19 @@
 					}
 				},
 				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 395906138187864,
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "deplatforming",
+					"sid": 354835973646849,
 					"parameters": {
-						"variable": "deplat"
+						"instance-variable": "deplat"
 					}
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 500132924238482,
+					"id": "compare-instance-variable",
+					"objectClass": "activistsavail",
+					"sid": 254722964055114,
 					"parameters": {
-						"variable": "actions",
+						"instance-variable": "actions",
 						"comparison": 5,
 						"value": "1"
 					}
@@ -10492,11 +10230,11 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 168409791617954,
+					"id": "add-to-instvar",
+					"objectClass": "toxic",
+					"sid": 913221669436091,
 					"parameters": {
-						"variable": "timer",
+						"instance-variable": "timer",
 						"value": "1"
 					}
 				}
@@ -10584,7 +10322,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 373479691656283,
+					"sid": 367921235894887,
 					"parameters": {
 						"layout": "gameover"
 					}
@@ -10606,11 +10344,11 @@
 					}
 				},
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 192300131901222,
+					"id": "compare-instance-variable",
+					"objectClass": "toxic",
+					"sid": 698350537716347,
 					"parameters": {
-						"variable": "timer",
+						"instance-variable": "timer",
 						"comparison": 5,
 						"value": "200"
 					}
@@ -10627,11 +10365,12 @@
 					}
 				},
 				{
-					"id": "go-to-layout",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 941746198316025,
+					"sid": 972223253821811,
 					"parameters": {
-						"layout": "gameover"
+						"variable": "hint",
+						"value": "0"
 					}
 				}
 			],
@@ -10641,15 +10380,32 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 944626297347358,
+							"id": "compare-instance-variable",
+							"objectClass": "activistsavail",
+							"sid": 393910024234246,
 							"parameters": {
-								"variable": "actions",
+								"instance-variable": "actions",
 								"comparison": 5,
 								"value": "7"
 							}
-						},
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 866951712159979,
+							"parameters": {
+								"variable": "hint",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 210759268164126
+				},
+				{
+					"eventType": "block",
+					"conditions": [
 						{
 							"id": "compare-at-xy",
 							"objectClass": "tracker",
@@ -10713,12 +10469,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
+							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 709487474682117,
+							"sid": 482525349558039,
 							"parameters": {
-								"variable": "hint",
-								"value": "1"
+								"layout": "gameover"
 							}
 						}
 					],
@@ -10728,95 +10483,350 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 239367804534182,
+							"id": "compare-at-xy",
+							"objectClass": "tracker",
+							"sid": 414912939007727,
 							"parameters": {
-								"variable": "actions",
-								"comparison": 5,
-								"value": "7"
+								"x": "2",
+								"y": "1",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "tracker",
+							"sid": 213127607943112,
+							"parameters": {
+								"x": "3",
+								"y": "1",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "tracker",
+							"sid": 926911612460681,
+							"parameters": {
+								"x": "4",
+								"y": "1",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "tracker",
+							"sid": 792840039665273,
+							"parameters": {
+								"x": "6",
+								"y": "1",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-at-xy",
+							"objectClass": "tracker",
+							"sid": 659125188415636,
+							"parameters": {
+								"x": "9",
+								"y": "1",
+								"comparison": 0,
+								"value": "2"
 							}
 						}
 					],
-					"actions": [],
-					"sid": 488872132159023,
-					"children": [
+					"actions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 794124898376851,
-									"parameters": {
-										"x": "2",
-										"y": "1",
-										"comparison": 0,
-										"value": "2"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 710341998323845,
-									"parameters": {
-										"x": "3",
-										"y": "1",
-										"comparison": 0,
-										"value": "2"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 814118476971890,
-									"parameters": {
-										"x": "4",
-										"y": "1",
-										"comparison": 0,
-										"value": "2"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 886541713974613,
-									"parameters": {
-										"x": "6",
-										"y": "1",
-										"comparison": 0,
-										"value": "2"
-									}
-								},
-								{
-									"id": "compare-at-xy",
-									"objectClass": "tracker",
-									"sid": 442216515719504,
-									"parameters": {
-										"x": "9",
-										"y": "1",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 983669442473263,
-									"parameters": {
-										"variable": "hint",
-										"value": "2"
-									}
-								}
-							],
-							"sid": 256856444803783,
-							"isOrBlock": true
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 160465226494521,
+							"parameters": {
+								"variable": "hint",
+								"value": "2"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 596761884591919,
+							"parameters": {
+								"layout": "gameover"
+							}
 						}
-					]
+					],
+					"sid": 757701379669477,
+					"isOrBlock": true
 				}
 			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 946994301661908,
+					"parameters": {
+						"variable": "endstate",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 278198239887544
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endstate",
+					"sid": 816270487311506,
+					"parameters": {
+						"text": "languagearray.At(language,52)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "endstatement",
+					"sid": 829752966100095,
+					"parameters": {
+						"text": "languagearray.At(language,54)"
+					}
+				}
+			],
+			"sid": 541050213404836
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 531395467943285,
+					"parameters": {
+						"variable": "endstate",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 819416438814046
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endstate",
+					"sid": 743374783721122,
+					"parameters": {
+						"text": "languagearray.At(language,53)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "endstatement",
+					"sid": 217837533054624,
+					"parameters": {
+						"text": "languagearray.At(language,55)"
+					}
+				}
+			],
+			"sid": 141702686341206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 813302307361160,
+					"parameters": {
+						"variable": "endstate",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 158010746246080
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endstate",
+					"sid": 399392301446959,
+					"parameters": {
+						"text": "languagearray.At(language,52)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "endstatement",
+					"sid": 510764430819777,
+					"parameters": {
+						"text": "languagearray.At(language,64)"
+					}
+				}
+			],
+			"sid": 549076921197433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 278459771836687,
+					"parameters": {
+						"variable": "hint",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 269892313591071
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endhint",
+					"sid": 435292991327873,
+					"parameters": {
+						"text": "languagearray.At(language,58)"
+					}
+				}
+			],
+			"sid": 249006701840370
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 262773288190386,
+					"parameters": {
+						"variable": "hint",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 237208082991743
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endhint",
+					"sid": 658985027135106,
+					"parameters": {
+						"text": "languagearray.At(language,57)"
+					}
+				}
+			],
+			"sid": 127397724125768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 895148872363131,
+					"parameters": {
+						"variable": "hint",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 933264773171548
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endhint",
+					"sid": 691357509286208,
+					"parameters": {
+						"text": "languagearray.At(language,56)"
+					}
+				}
+			],
+			"sid": 754839817113482
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 364703915536735,
+					"parameters": {
+						"variable": "hint",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 324449559239489
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "endhint",
+					"sid": 618876839722606,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 380553484941411
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 725481382934566,
+					"parameters": {
+						"object": "menubutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 767895135042345,
+					"parameters": {
+						"layout": "startmenu"
+					}
+				}
+			],
+			"sid": 452191439740923,
 			"isOrBlock": true
 		},
 		{

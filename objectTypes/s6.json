@@ -21,6 +21,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 962259212541793
+		},
+		{
+			"name": "strikewin",
+			"type": "boolean",
+			"desc": "",
+			"sid": 768547687644521
 		}
 	],
 	"behaviorTypes": [],
@@ -37,7 +43,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3777019,
+						"imageSpriteId": 9510287,
 						"collisionPoly": {
 							"points": [
 								0.1641137855579869,

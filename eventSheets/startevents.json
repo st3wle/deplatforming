@@ -37,6 +37,15 @@
 					"sid": 858297410297068
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 408599615835417,
+					"parameters": {
+						"variable": "endstate",
+						"value": "0"
+					}
+				},
+				{
 					"id": "request-project-file",
 					"objectClass": "AJAX",
 					"sid": 256593420165644,
@@ -54,7 +63,7 @@
 				{
 					"id": "on-completed",
 					"objectClass": "AJAX",
-					"sid": 278777774628944,
+					"sid": 616976361081299,
 					"parameters": {
 						"tag": "\"Start\""
 					}
@@ -64,67 +73,53 @@
 				{
 					"id": "parse",
 					"objectClass": "JSON",
-					"sid": 200382331540385,
+					"sid": 199452003537800,
 					"parameters": {
 						"data": "AJAX.LastData"
 					}
 				},
 				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 576255147129497
-				},
-				{
 					"id": "load",
 					"objectClass": "languagearray",
-					"sid": 190331448707996,
+					"sid": 327901734241207,
 					"parameters": {
 						"json": "AJAX.LastData"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "languagetext",
+					"sid": 253379631967859,
+					"parameters": {
+						"text": "languagearray.At(language,0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "starttext",
+					"sid": 381690324843625,
+					"parameters": {
+						"text": "languagearray.At(language,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Creditstext",
+					"sid": 221676001575874,
+					"parameters": {
+						"text": "languagearray.At(language,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "tutortext",
+					"sid": 540961266592858,
+					"parameters": {
+						"text": "languagearray.At(language,3)"
+					}
 				}
 			],
-			"sid": 558825501972862,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "languagetext",
-							"sid": 797380961910234,
-							"parameters": {
-								"text": "languagearray.At(language,0)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "starttext",
-							"sid": 757091205829169,
-							"parameters": {
-								"text": "languagearray.At(language,1)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Creditstext",
-							"sid": 439496303867015,
-							"parameters": {
-								"text": "languagearray.At(language,2)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "tutortext",
-							"sid": 351612501416440,
-							"parameters": {
-								"text": "languagearray.At(language,3)"
-							}
-						}
-					],
-					"sid": 905459080831993
-				}
-			]
+			"sid": 516000614336911
 		},
 		{
 			"eventType": "block",
@@ -182,7 +177,7 @@
 				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
-					"sid": 655143398435032,
+					"sid": 441121105791053,
 					"parameters": {
 						"object": "startmenu"
 					},
@@ -193,14 +188,13 @@
 				{
 					"id": "set-font-color",
 					"objectClass": "startmenu",
-					"sid": 527548567030531,
+					"sid": 239693665501738,
 					"parameters": {
 						"color": "rgbEx(255,255,255)"
 					}
 				}
 			],
-			"sid": 947160172854051,
-			"isOrBlock": true
+			"sid": 131636004838263
 		},
 		{
 			"eventType": "block",
@@ -300,18 +294,11 @@
 								"variable": "language",
 								"value": "0"
 							}
-						}
-					],
-					"sid": 298499137211087
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
+						},
 						{
 							"id": "set-text",
 							"objectClass": "languagetext",
-							"sid": 167948203308862,
+							"sid": 405738793112636,
 							"parameters": {
 								"text": "languagearray.At(language,0)"
 							}
@@ -319,7 +306,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "starttext",
-							"sid": 327330611816814,
+							"sid": 787630875262718,
 							"parameters": {
 								"text": "languagearray.At(language,1)"
 							}
@@ -327,7 +314,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "Creditstext",
-							"sid": 626489557154229,
+							"sid": 940451255379148,
 							"parameters": {
 								"text": "languagearray.At(language,2)"
 							}
@@ -335,13 +322,58 @@
 						{
 							"id": "set-text",
 							"objectClass": "tutortext",
-							"sid": 810269095520330,
+							"sid": 944663042788123,
 							"parameters": {
 								"text": "languagearray.At(language,3)"
 							}
 						}
 					],
-					"sid": 552315766580472
+					"sid": 298499137211087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 540143962240576
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "languagetext",
+							"sid": 479244317026112,
+							"parameters": {
+								"text": "languagearray.At(language,0)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "starttext",
+							"sid": 750442475737148,
+							"parameters": {
+								"text": "languagearray.At(language,1)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Creditstext",
+							"sid": 266531606260618,
+							"parameters": {
+								"text": "languagearray.At(language,2)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "tutortext",
+							"sid": 795452688008725,
+							"parameters": {
+								"text": "languagearray.At(language,3)"
+							}
+						}
+					],
+					"sid": 126632255441508
 				}
 			],
 			"isOrBlock": true

@@ -16,7 +16,11 @@
 					},
 					"uid": 17,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 80,
 						"y": 80,
@@ -157,7 +161,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -264,7 +269,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -425,7 +431,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -479,7 +486,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -937,7 +945,9 @@
 						"live-preview": false
 					},
 					"uid": 80,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"deplat": false
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -988,7 +998,8 @@
 					},
 					"uid": 81,
 					"instanceVariables": {
-						"cooldown": false
+						"cooldown": false,
+						"monitoractive": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -1422,7 +1433,8 @@
 					"instanceVariables": {
 						"randomize": 0,
 						"savecs": 0,
-						"saverep": 0
+						"saverep": 0,
+						"strikewin": false
 					},
 					"behaviors": {
 						"Solid": {
@@ -1833,7 +1845,10 @@
 						"live-preview": false
 					},
 					"uid": 94,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"timer": 0,
+						"clickcounter": 3
+					},
 					"behaviors": {
 						"Anchor": {
 							"properties": {

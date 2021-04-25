@@ -19,9 +19,9 @@
 				{
 					"id": "request-project-file",
 					"objectClass": "AJAX",
-					"sid": 949039237236947,
+					"sid": 569336663343870,
 					"parameters": {
-						"tag": "\"Start\"",
+						"tag": "\"tut\"",
 						"file": "language.json"
 					}
 				},
@@ -55,6 +55,76 @@
 					"sid": 335434631821125,
 					"parameters": {
 						"text": "\"\""
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "networks",
+					"sid": 441182029480123,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics1",
+					"sid": 905563065633628,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "mechanics2",
+					"sid": 694344198500779,
+					"behaviorType": "Pin2",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "toxic",
+					"sid": 481446654874628,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "tutorpin",
+					"sid": 257144914475980,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "pin",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
 					}
 				},
 				{
@@ -136,116 +206,9 @@
 					"parameters": {
 						"text": "languagearray.At(language,50)"
 					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "networks",
-					"sid": 441182029480123,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "pin",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "mechanics1",
-					"sid": 905563065633628,
-					"behaviorType": "Pin2",
-					"parameters": {
-						"pin-to": "pin",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "mechanics2",
-					"sid": 694344198500779,
-					"behaviorType": "Pin2",
-					"parameters": {
-						"pin-to": "pin",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "toxic",
-					"sid": 481446654874628,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "pin",
-						"image-point": "0",
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				},
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "tutorpin",
-					"sid": 257144914475980,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "pin",
-						"image-point": "0",
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
 				}
 			],
 			"sid": 229519451081247
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-completed",
-					"objectClass": "AJAX",
-					"sid": 188501437785504,
-					"parameters": {
-						"tag": "\"Start\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "parse",
-					"objectClass": "JSON",
-					"sid": 527671110048600,
-					"parameters": {
-						"data": "AJAX.LastData"
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 287590612986596
-				},
-				{
-					"id": "load",
-					"objectClass": "languagearray",
-					"sid": 664575156585746,
-					"parameters": {
-						"json": "AJAX.LastData"
-					}
-				}
-			],
-			"sid": 347298287679651
 		},
 		{
 			"eventType": "block",
@@ -1412,9 +1375,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "popup",
-					"sid": 938089544798738,
+					"sid": 664518366407921,
 					"parameters": {
-						"text": "languagearray.At(language,59)"
+						"text": "languagearray.At(language,73)"
 					}
 				}
 			],

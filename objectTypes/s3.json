@@ -21,6 +21,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 705504083963529
+		},
+		{
+			"name": "strikewin",
+			"type": "boolean",
+			"desc": "",
+			"sid": 159839932648027
 		}
 	],
 	"behaviorTypes": [],

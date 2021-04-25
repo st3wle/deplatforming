@@ -34,7 +34,7 @@
 						"x": 950,
 						"y": 100,
 						"width": 850,
-						"height": 200,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -364,7 +364,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 950,
-						"y": 370,
+						"y": 390,
 						"width": 250,
 						"height": 116,
 						"originX": 0.5,
@@ -406,7 +406,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 950,
-						"y": 280,
+						"y": 300,
 						"width": 800,
 						"height": 50,
 						"originX": 0.5,
@@ -474,7 +474,11 @@
 					},
 					"uid": 78,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 80,
 						"y": 80,

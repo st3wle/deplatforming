@@ -9,6 +9,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 696760486790923
+		},
+		{
+			"name": "monitoractive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 988410472647745
 		}
 	],
 	"behaviorTypes": [],

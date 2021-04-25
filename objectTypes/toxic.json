@@ -3,7 +3,20 @@
 	"plugin-id": "Sprite",
 	"sid": 887079766767065,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "timer",
+			"type": "number",
+			"desc": "",
+			"sid": 974009384100093
+		},
+		{
+			"name": "clickcounter",
+			"type": "number",
+			"desc": "",
+			"sid": 606239396138467
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",

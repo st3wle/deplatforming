@@ -3,7 +3,14 @@
 	"plugin-id": "Text",
 	"sid": 256681657401064,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "actions",
+			"type": "number",
+			"desc": "",
+			"sid": 902247516734560
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": []
 }
