@@ -17,16 +17,9 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"Tutorial1",
-		"Tutorial2",
-		"tutbutton1",
-		"tutbutton2",
-		"tutbutton3",
-		"Tutorial4",
-		"Tutorial5",
 		"popup",
-		"Tutorial3",
-		"Tutorial6",
-		"Tutorial7"
+		"activisttxt",
+		"deplatformtxt",
+		"monitoringtxt"
 	]
 }

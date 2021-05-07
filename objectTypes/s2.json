@@ -27,6 +27,24 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 987956386728543
+		},
+		{
+			"name": "tutrad",
+			"type": "number",
+			"desc": "",
+			"sid": 545993546543453
+		},
+		{
+			"name": "tutcs",
+			"type": "boolean",
+			"desc": "",
+			"sid": 162347144156156
+		},
+		{
+			"name": "tutrep",
+			"type": "boolean",
+			"desc": "",
+			"sid": 254659808202928
 		}
 	],
 	"behaviorTypes": [],

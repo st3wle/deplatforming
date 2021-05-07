@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r241",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Flash",
 			"name": "Flash",
@@ -133,7 +141,7 @@
 			"languagearray",
 			"popup",
 			"menubutton",
-			"infect",
+			"message",
 			"s1",
 			"s4",
 			"s5",
@@ -164,11 +172,10 @@
 			"monitoring",
 			"monitoringtxt",
 			"deplatforming",
-			"endstatement",
+			"endreason",
 			"CS",
 			"objecttitle",
 			"Tutorial1",
-			"Tutorial2",
 			"pageright",
 			"pageleft",
 			"3strike_s6",
@@ -194,17 +201,15 @@
 			"Creditstext",
 			"TutorialHeader",
 			"pagecounter",
-			"tutbutton1",
-			"tutbutton2",
-			"tutbutton3",
-			"Tutorial4",
-			"Tutorial5",
-			"tutmech1",
-			"tutmech2",
-			"Tutorial3",
-			"tutmech3",
-			"Tutorial6",
-			"Tutorial7"
+			"pause",
+			"pausecover",
+			"minipop",
+			"minipop2",
+			"storywin",
+			"timertxt",
+			"gameoverhate",
+			"Browser",
+			"deathhint"
 		],
 		"subfolders": []
 	},
@@ -215,9 +220,7 @@
 			"startmenu",
 			"networks",
 			"autogen",
-			"tutorpin",
-			"mechanics1",
-			"mechanics2"
+			"tutorpin"
 		],
 		"subfolders": []
 	},
@@ -227,7 +230,8 @@
 			"game",
 			"tutorial",
 			"credits",
-			"gameover"
+			"gameover",
+			"storywindow"
 		],
 		"subfolders": []
 	},
@@ -354,7 +358,7 @@
 		"authorWebsite": "",
 		"appId": "",
 		"pixelRounding": false,
-		"useLoaderLayout": false,
+		"useLoaderLayout": true,
 		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
@@ -395,5 +399,5 @@
 	},
 	"viewportWidth": 1920,
 	"viewportHeight": 1080,
-	"firstLayout": "startmenu"
+	"firstLayout": "credits"
 }

@@ -2,7 +2,7 @@
     "c2array": true,
     "size": [
         7,
-        86,
+        100,
         1
     ],
     "data": [
@@ -83,34 +83,34 @@
                 "'s alt-light tries to recruit the gaming community through closed servers on "
             ],
             [
-                "[color=#15ffee]PatriotChan has cooked up another hate campaign and tries to spread toxic narratives to other platforms. Can you stop it?[/color]"
+                ""
             ],
             [
-                "[color=#15ffee]Clicking on networks where the hate campaign has spread reduce the hate through counterspeech. Double clicks cause bans.[/color]"
-            ],
-            [
-                "[color=#15ffee]Network to find more activists supporting your cause.[/color]"
-            ],
-            [
-                "Network"
-            ],
-            [
-                "Networking will grant you an additional activist. This allows more actions at the same time and unlocks monitoring."
-            ],
-            [
-                "Interface"
+                "[color=#15ffee]Trying to counter the toxic discourse on [/color]"
             ],
             [
                 ""
             ],
             [
-                "Available activists: "
+                "Networking"
+            ],
+            [
+                "Networking connects you to more activists, giving access to more actions."
+            ],
+            [
+                "The game was developed as part of the Play Your Role gamejam."
+            ],
+            [
+                "This game was funded by the European Union’s Rights, Equality and Citizenship Programme (2014-2020).The content of this game represents the views of the author only and is his/her sole responsibility. The European Commission does not accept any responsibility for use that may be made of the information it contains."
+            ],
+            [
+                "Available activists:"
             ],
             [
                 "Network radicalisation:  "
             ],
             [
-                "Clicking on a platform that has been targetted by the hate campaign triggers counter speech. Counter speech reduces the hate on the platform for the next few clicks."
+                ""
             ],
             [
                 "[color=#8ffe09]PatriotChan[/color] is an unmoderated community, full of hateful users, known to create toxic narratives and hate campaigns."
@@ -149,10 +149,10 @@
                 "Monitoring"
             ],
             [
-                "When monitoring one of your activists keeps an eye on developments in the hate campaign. It makes your counter speech more effective."
+                "When monitoring one of your activists keeps an eye on developments in the hate campaign, making your counter speech more effective."
             ],
             [
-                " channel received a temporary ban upon your report."
+                "[color=#15ffee] channel received a temporary ban upon your report.[/color]"
             ],
             [
                 "[color=#15ffee]So much reporting and it pays of! You can now deplatform the hate campaign from [/color]"
@@ -170,64 +170,106 @@
                 "Better luck next time!"
             ],
             [
-                "You successfully stopped the hate campaign from breaking into major networks."
+                "You successfully stopped the hate campaign from breaking into major networks. While hate and bigotry are still bubbling under the surface, common users will be much less exposed now."
             ],
             [
-                "There is always another hate campaign to rally against..."
+                "You were overwhelmed by the hate campaign! No worries, there is always another hate campaign to rally against."
             ],
             [
-                "HINT: You were on the right track and already unlocked deplatforming. Win by deplatforming the hate campaign from the big networks."
+                "HINT: You were on the right track deplatforming the hate campaign. There are 5 networks to deplatform, maximise monitoring to see them all."
             ],
             [
-                "HINT: You already unlocked monitoring. Monitoring makes your counter speech more effective and keeps track of demonitisation on big platforms."
+                "HINT: The game speed adapts to you. Every click brings you closer to the goal but also escalates the hate campaign."
             ],
             [
                 "HINT: Stopping a hate campaign is not a single person effort. Try to find more activists through networking, who can help you to keep the campaign at bay."
             ],
             [
-                ""
-            ],
-            [
                 "[color=#15ffee]PatriotChan has cooked up another hate campaign and tries to spread toxic narratives to other platforms. [/color]"
             ],
             [
-                "[color=#15ffee]Try stopping it by clicking on networks to reduce the hate through counterspeech.[/color]"
+                "[color=#15ffee]Try stopping it by clicking on networks to reduce the hate through counter speech.[/color]"
             ],
             [
                 "[color=#15ffee]Further abilities will be unlocked while you play. To deplatform you need to use all of them.[/color]"
             ],
             [
-                "[color=#15ffee]Make sure the network never gets 100% infected. Win by deplatforming the hate campaign on the biggest networks.[/color]"
+                "[color=#15ffee]Make sure the network never gets 100% infected.[/color]"
             ],
             [
-                "sort of..."
+                "[color=#15ffee]You only have 2.5min to deplatform the hate.[/color]"
+            ],
+            [
+                "Your time ran out! No worries, there is always another hate campaign to rally against."
             ],
             [
                 "Introduction"
             ],
             [
-                "In [i]deplatforming[/i] you play an activist group, trying to stop a digital hate campaign from the depth of [color=#8ffe09]PatriotChan[/color], a loosely organised racist imageboard community. Your aim is to keep the hate campaign at bay, while managing to convince major platforms to ban that hate speech from their platform."
+                "In [i]deplatforming[/i] you play an activist group, trying to stop a digital hate campaign from the depth of [color=#8ffe09]PatriotChan[/color], a loosely organised racist imageboard community. Your aim is to keep the hate campaign at bay long enough, to gather enough evidence to convince major platforms ([color=red]MehTube[/color], [color=#dc6499]Instagroom[/color], [color=#2fcdff]Chitter[/color], [color=#ff4500]Robbot[/color] and [color=#8c9eff]Miscord[/color]) to ban the hate campaign."
             ],
             [
                 "Game mechanics"
             ],
             [
-                "A second click reports the hate channel on the platform, leading to a temporary ban that prevents that platform from speading hate to others."
+                "Networks in the game can send out hate messages, spreading the hate campaign and bringing it to new networks. All radicalised networks will spread hate, depending on how radicalised they are. Interact with the game by clicking the networks and action buttons."
             ],
             [
-                "The platforms exposure to the hate campaign is showcased by a colour shift towards toxic green. "
+                "Clicking on a radicalised network starts [i]counter speech[/i]. This will reduce the radicalisation at the same time it spreads. A second click will [i]report[/i] the network, triggering a temporary ban, stopping it from spreading hate itself. If the network  is clicked again, while the channel is banned,it will be [i]demonetised[/i], removing all radicalisation, opening it up again."
             ],
             [
-                "Some platforms will demonetise hate channels on the third click. This makes the hate campaign lose all influence on the platform. If you hit the monitoring threshold for the network it will also count towards deplatforming with the light blue score tracker."
+                "[i]Networking[/i] gives access to more actions in the game and unlocks [i]monitoring[/i]. [i]Monitoring[/i] makes your actions last longer and keeps track of how often channels were [i]demonetised[/i]. Channels that have been [i]demonetised[/i] too often open the possibility to [i]deplatform[/i]. [i]Deplatform[/i] banishes hate content permanently from the platform."
             ],
             [
-                "If you manage to deplatform the hate campaign from a platform it will create a white protective border around it. Deplatform the 5 major networks to win the game."
+                "The game responds to the players speed. Hence the hate campaign will only act when they do. Each click counts! Any button or network clicked can help but also lets the hate campaign act. Actions will be blocked for a few clicks before they can be used again."
             ],
             [
-                "You lose the game if you do not manage to deplatform the hate campaign of the major platforms within 2,5min or if the hate campaign spreads over the entire network. You can see the spread on toxicity percentage in the middle of the screen. Note: deplatformed networks are not included in the calculation, so be cautious to keep the spread of the hate campaign low, even when you are about to deplatform."
+                "Further Information"
             ],
             [
-                "Deplatforming closes the platform to the hate campaign. You have to press the button and the network. Closed platforms have a white protective border."
+                "If you are curious why this whole game is about deplatforming: because it works! 2020 has show the impact deplatforming can have and raised a lot of discussion about it. For more information check the [color=#15ffee]Report \"Hate not Found\" by IDZ[/color]."
+            ],
+            [
+                ""
+            ],
+            [
+                " seconds left"
+            ],
+            [
+                "[color=#15ffee]You start recruiting more activists for your cause. Find more in 3 clicks.[/color]"
+            ],
+            [
+                "[color=#15ffee] put a permaban on the hate campaign account. Others still could start a new hate channel.[/color]"
+            ],
+            [
+                ""
+            ],
+            [
+                "Radicalisation: "
+            ],
+            [
+                "Counter speech active"
+            ],
+            [
+                "Temporary ban"
+            ],
+            [
+                "Deplatforming possible"
+            ],
+            [
+                "Monitoring tracks bans"
+            ],
+            [
+                "[color=#8ffe09]PatriotChan[/color] cannot be affected."
+            ],
+            [
+                ""
+            ],
+            [
+                "Introduction"
+            ],
+            [
+                "[i]Deplatforming[/i] is an abstract, interactive simulation of the struggle to stop a hate campaign on the internet. Players try to use the activist's toolkit ([i]counter speech, reporting, monitoring[/i]) to convince major platforms ([color=red]MehTube[/color], [color=#dc6499]Instagroom[/color], [color=#2fcdff]Chitter[/color], [color=#ff4500]Robbot[/color] and [color=#8c9eff]Miscord[/color]) to remove accounts of the hate campaign permanently. You lose if the hate campaign radicalises the entire network and establishes their bigoted narratives or your time runs out."
             ],
             [
                 ""
@@ -236,10 +278,10 @@
                 ""
             ],
             [
-                "You start recruiting more activists for your cause. Find more in 3 clicks."
+                ""
             ],
             [
-                " put a permaban on the hate campaign account. However, others could still start a new hate channel."
+                ""
             ],
             [
                 ""
@@ -343,25 +385,25 @@
                 "s Alt-Light versucht Spieler*innen zu rekrutieren über geschlossene Server auf "
             ],
             [
-                "[color=#15ffee]PatriotChan hat wieder eine Hasskampagne ersponnen und versucht seine toxischen Narrative auf andere Plattformen zu streuen. Kannst du sie stoppen?[/color]"
+                ""
             ],
             [
-                "[color=#15ffee]Ein Klick auf Netzwerke, auf welchen die Hasskampagne schon angekommen ist kann die dort verbreitete Hate Speech durch Gegenrede reduzieren.[/color]"
+                "[color=#15ffee]Aktivist*innen halten an gegen die problematische Rhetorik auf [/color]"
             ],
             [
-                "[color=#15ffee]Vernetze dich um zusätzliche Aktivist*innen zu mobilisieren.[/color]"
+                ""
             ],
             [
                 "Netzwerken"
             ],
             [
-                "Netzwerken\nerhöht die Anzahl deiner Aktivist*innen um 1. Dadurch hast du mehr Aktionen zur Verfügung und schaltet Monitoring frei."
+                "Netzwerken\nverbindet dich mit anderen Aktivist*innen. Dadurch bekommst du Zugang zu mehr  Aktionen."
             ],
             [
-                "Interface"
+                "Dieses Spiel wurde als Teil des Play Your Role Gamejams entwickelt."
             ],
             [
-                ""
+                "Dieses Spiel wurde durch das European Union’s Rights, Equality and Citizenship Programme (2014-2020) gefördert.Der Inhalt des Spiels spiegelt nur die Sichtweise der Autor*innen wieder und ist ausschließlich in deren Verantwortung entstanden.Die Europäische Kommission übernimmt keinerlei Verantwortung für die Inhalte des Produkts."
             ],
             [
                 "Verfügbare Aktivist*innen: "
@@ -370,7 +412,7 @@
                 "Netzwerk Radikalisierungsfortschritt:   "
             ],
             [
-                "Der erste Klick auf ein Netzwerk, welches der Hasskampagne ausgesetzt ist, startet Gegenrede. Diese Reduziert den Einfluss der Hasskampagne auf der Plattform für die nächsten Klicks."
+                ""
             ],
             [
                 "[color=#8ffe09]PatriotChan[/color] ist eine unmoderierte Community, voller hasserfüllter Nutzer*innen und dafür bekannt toxische Narrative und Hasskampagnen zu starten."
@@ -403,7 +445,7 @@
                 "[color=#009090]NoK[/color] ist ein großes soziales Netzwerk aus Russland. Irgendwie die richtige Plattform, wenn man Ausländer nicht mag?"
             ],
             [
-                "[color=#15ffee]Dein Aktivist\"innennetzewerk ist nun gro- genug, dass eine Person das Monitoring übernehmen kann![/color]"
+                "[color=#15ffee]Dein Aktivist*innennetzewerk ist nun groß genug, dass eine Person das Monitoring übernehmen kann![/color]"
             ],
             [
                 "Monitoring"
@@ -412,10 +454,10 @@
                 "Beim Monitoring behält eine*r deiner Aktivist*innen die Entwicklungen in der Hasskampagne im Auge. Dadurch wird deine Gegenrede effektiver."
             ],
             [
-                "-Kanal wurde vorübergehend gesperrt aufgrund deines Reports."
+                "[color=#15ffee]-Kanal wurde vorübergehend gesperrt aufgrund deiner Meldung.[/color]"
             ],
             [
-                "[color=#15ffee]So viele Reports, aber es macht sich bezahlt! Du Klick Deplatforming und verbanne die Hasskamapgne von [/color]"
+                "[color=#15ffee]So viele Reports, aber es macht sich bezahlt! Klick Deplatforming und verbanne die Hasskamapgne von [/color]"
             ],
             [
                 "Deplatforming"
@@ -430,64 +472,106 @@
                 "Vielleicht läuft es beim nächsten Mal besser..."
             ],
             [
-                "Du konntest die Hasskampagne daran hindern in den großen Netzwerken Fuß zu fassen."
+                "Du konntest die Hasskampagne daran hindern in den großen Netzwerken Fuß zu fassen. Während Hass und Diskriminierung noch unter der Oberfläche brodeln, erreichen sie zumindest nicht die Durchschnittsnutzer*innen."
             ],
             [
-                "Es gibt immer eine nächste Hasskampagne, die es zu stoppen gilt..."
+                "Die Hasskampagne hat dich überrannt. Doch keine Sorge, es gibt immer eine nächste Hasskampagne, die es zu stoppen gilt..."
             ],
             [
-                "TIPP: Du warst auf dem richtigen Weg und hast bereits Deplatforming freigeschaltet. Gewinne indem du die Hasskampagne von den großen Netzwerken deplatformst."
+                "TIPP: Du warst auf dem richtigen Weg die Hasskampagne zu deplatformen. Maximiere Monitoring damit du die 5 möglichen Netzwerke dafür siehst."
             ],
             [
-                "TIPP: Du hast bereits Monitoring freigeschaltet. Dies macht deine Gegenrede effektiver und überwacht die Demonitarisierung von Hasskanälen auf großen Plattformen."
+                "TIPP: Das Spiel passt sich deiner Geschwindigkeit an. Jeder Klick bringt dich dem Ziel näher, lässt allerdings auch die Hasskampagne weiter eskalieren."
             ],
             [
                 "TIPP: Eine Hasskampagne kann man nicht im Alleingang stoppen. Versuche dich mit mehr Aktivist*innen zu vernetzen, damit du mehr Handlungsmöglichkeiten hast."
             ],
             [
-                ""
+                "[color=#15ffee]PatriotChan hat wieder eine Hasskampagne ersponnen und versucht diese zu streuen. Kannst du sie stoppen?[/color]"
             ],
             [
-                "[color=#15ffee]PatriotChan hat wieder eine Hasskampagne ersponnen und versucht seine toxischen Narrative auf andere Plattformen zu streuen. Kannst du sie stoppen?[/color]"
+                "[color=#15ffee]Klicke auf radikalisierte Netzwerke um deren Hate Speech durch Gegenrede zu reduzieren.[/color]"
             ],
             [
-                "[color=#15ffee]Ein Klick auf Netzwerke, auf welchen die Hasskampagne schon angekommen ist kann die dort verbreitete Hate Speech durch Gegenrede reduzieren.[/color]"
+                "[color=#15ffee]Netzwerken gibt dir im Spielverlauf mehr Aktionsmöglichkeiten. [/color]"
             ],
             [
-                "[color=#15ffee]Weitere Fähigkeiten werden während des Spiels freigeschaltet. Du benötigst sie alle um den Hass zu [i]deplatformen[/i][/color]"
+                "[color=#15ffee]Stelle sicher, dass die Netzwerkradikalisierung nie 100% erreicht.[/color]"
             ],
             [
-                "[color=#15ffee]Stelle sicher, dass die Netzwerkradikalisierung nie 100% erreicht. Gewinne indem du den Hass von den größten Plattformen [i]deplatformst[/i][/color]"
+                "[color=#15ffee]Du hast nur 2,5 Minuten Zeit und den Hass zu deplatformen.[/color]"
             ],
             [
-                "mehr oder weniger.."
+                "Deine Zeit ist abgelaufen. Doch keine Sorge, es gibt immer eine nächste Hasskampagne, die es zu stoppen gilt..."
             ],
             [
                 "Einleitung"
             ],
             [
-                "In [i]deplatforming[/i] übernimmst du die Verantwortung über eine Aktivist*innengruppe, welche versucht eine digitale Hasskampgne zu stoppen. Die Kampagne kommt aus den Tiefen von [color=#8ffe09]PatriotChan[/color], einer lose organisierten, rassistischen Imageboard Community. Dein Ziel ist die Hasskampagne in Schach zu halten und dabei die großen Plattformen zu überzeugen die Hate Speech permanent zu verbannen."
+                "In [i]deplatforming[/i] übernimmst du die Verantwortung über eine Aktivist*innengruppe, welche versucht eine digitale Hasskampgne zu stoppen. Die Kampagne kommt aus den Tiefen von [color=#8ffe09]PatriotChan[/color], einer lose organisierten, rassistischen Imageboard Community. Dein Ziel ist die Hasskampagne in Schach zu halten bis du genug Informationen gesammelt hast um die großen Plattformen ([color=red]MehTube[/color], [color=#dc6499]Instagroom[/color], [color=#2fcdff]Chitter[/color], [color=#ff4500]Robbot[/color] und [color=#8c9eff]Miscord[/color]) zu überzeugen die Hasskampagne permanent zu verbannen."
             ],
             [
                 "Spielmechaniken"
             ],
             [
-                "Ein zweiter Klick reportet den Hasskanal auf der Plattform. Der daraus resultiereden temporäre Bann verhindert, dass sich der Hass von der Plattform aus weiterverbreitet."
+                "Netzwerke können Hassbotschaften versenden und dadurch die Hasskampagne auf andere Netzwerke verteilen. Alle Netzwerke verteilen Hass, je nachdem wie stark sie radikalisiert sind. Man nimmt Einfluss auf das Spiel indem man auf die Netzwerke oder Aktionsknöpfe klickt."
             ],
             [
-                "Wie stark die Plattform der Hasskampagne ausgesetzt ist wird über den Farbwechsel zu Giftgrün dargestellt."
+                "Klickt man auf ein radikalisiertes Netzwerk startet man [i]Gegenrede[/i] und reduziert damit die Radikalisierung so schnell wie sie entsteht. Ein zweiter Klick [i]meldet[/i] den Hasskanal und führt zu einer vorübergehenden Sperre, wodurch er keinen Hass weiterverbbreiten kann. Wird auf einen gesperrten Kanal geklickt wird dieser [i]demonetisiert[/i], wodurch alle Radikalisierung entfernt und das Netzwerk wieder geöffnet wird."
             ],
             [
-                "Manche Plattformen Demonetarisieren den Hasskanal beim dritten Klick. Dabei verliert die Hasskampagne allen Einfluss auf der Plattform.Wenn du bereits Monitoring freigeschaltet hast wird dies im hellblauen Tracker vermerkt."
+                "[i]Netzwerken[/i] gibt mehr Aktionen und entsperrt  [i]Monitoring[/i]. [i]Monitoring[/i] macht die Aktionen effektiver und prüft wie oft Hasskanäle [i]demonetarisiert[/i] wurden. Wenn Kanäle zu oft  [i]demonetarisiert[/i] wurden öffnet sich die Möglichkeit des  [i]Deplatforming[/i]. [i]Deplatforming[/i]  verbannt die Hasskampagne permanent von der Plattform."
             ],
             [
-                "Wenn du erfolgreich die Hasskampagne deplatformst erhält diese Plattform eine weiße Schutzbarriere.Deplatform e die 5 größen Netzwerke um das Spiel zu gewinnen."
+                "Das Spiel passt sich an die Geschwindigkeit der Spielenden an. Daher agiert die Hasskampagne nur, wenn es eine Eingabe gibt. Jeder Klick bewirkt etwas! Jeder Knopf und jedes Netzwerk, dass angeklickt wird kann helfen aber lässt auch die Hasskampagne agieren. Aktionen werden für ein paar Klicks beansprucht, bevor sie wieder zur Verfügung stehen."
             ],
             [
-                "Du verlierst das Spiel, wwenn du es nicht binnen 2,5min schaffst die Hasskampagne aus den großen Netzwerke zu deplatformenoder falls die Hasskampagne das gesamte Netzwerk übernimmt. Du siehst die Verbreitung der Hasskampagne an der Prozentanzeige in der Bildschirmmitte. Hinweis: deplatformte Netzwerke werden nicht mit eingerechnet, daher sei achtsam und sorge für niedrige Verbreitung der Kampagne bevor du deplatformst."
+                "Weitere Informationen"
             ],
             [
-                "Deplatforming verschließt die Plattformen gegenüber der Hasskampagne. Dazu musst du auf den Knopf und die Platform clicken. Geschlossene Plattformen haben eine weiße, schützende Barriere."
+                "Falls du dich wundest warum dieses gesamte Spiel sich mit Deplatforming auseinandersetzt: Weil es wirkt! 2020  hat gezeigt welche Effekte Deplatforming haben kann und viele Diskussionen losgetreten. Für weitere Informationen check den [color=#15ffee]Report \"Hate not Found\" des IDZ[/color]."
+            ],
+            [
+                ""
+            ],
+            [
+                " Sekunden verbleiben"
+            ],
+            [
+                "[color=#15ffee]Du erweiterst dein Netzwerk, finde mehr Aktivist*innen in 3 Klicks.[/color]"
+            ],
+            [
+                "[color=#15ffee] hat den Kanal der Hasskampagne aus seinem Netzwerk geworfen. Es könnte allerdings ein neuer starten.[/color]"
+            ],
+            [
+                ""
+            ],
+            [
+                "Radikalisierung: "
+            ],
+            [
+                "Gegenrede aktiv"
+            ],
+            [
+                "Vorübergehende Sperre"
+            ],
+            [
+                "Deplatforming möglich"
+            ],
+            [
+                "Monitoring sammelt Sperren"
+            ],
+            [
+                "[color=#8ffe09]PatriotChan[/color] kann nicht beeinflusst werden."
+            ],
+            [
+                ""
+            ],
+            [
+                "Einführung"
+            ],
+            [
+                "[i]Deplatforming[/i] ist eine abstrakte, interaktive Simulation des Ringens mit einer Hasskampagne im Internet. Spieler*innen nutzen die typischen Werkzeuge  von Aktivist*innen ([i]Gegenrede, Reports, Monitoring[/i]) um große Plattformen ([color=red]MehTube[/color], [color=#dc6499]Instagroom[/color], [color=#2fcdff]Chitter[/color], [color=#ff4500]Robbot[/color] und [color=#8c9eff]Miscord[/color]) zu überzeugen die Kanäle der Hasskampagne permanent zu sperren. Du verlierst falls die Hasskampagne es schafft das gesamte Netz zu radikalisieren und dadurch nachhaltig ihre Narrative zu etablieren oder falls dir die Zeit ausgeht."
             ],
             [
                 ""
@@ -496,10 +580,10 @@
                 ""
             ],
             [
-                "Du erweiterst dein Netzwerk, finde mehr Aktivist*innen in 3 Klicks."
+                ""
             ],
             [
-                " hat den Kanal der Hasskampagne aus seinem Netzwerk geworfen. Das hindert allerdings nicht andere davon die Kampagne mit einem neuen Kanal dort zu etablieren."
+                ""
             ],
             [
                 ""
@@ -571,6 +655,48 @@
             ],
             [
                 "[color=#8c9eff]Miscord[/color]"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
             ],
             [
                 ""
@@ -1044,6 +1170,48 @@
             ],
             [
                 ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
             ]
         ],
         [
@@ -1091,6 +1259,48 @@
             ],
             [
                 "[color=#8c9eff]Miscord[/color]"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
             ],
             [
                 ""
@@ -1564,6 +1774,48 @@
             ],
             [
                 ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
             ]
         ],
         [
@@ -1611,6 +1863,48 @@
             ],
             [
                 "[color=#8c9eff]Miscord[/color]"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
             ],
             [
                 ""

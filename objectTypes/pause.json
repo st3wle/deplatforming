@@ -1,83 +1,72 @@
 {
-	"name": "3strike_s4",
+	"name": "pause",
 	"plugin-id": "Sprite",
-	"sid": 979344740109655,
+	"sid": 173938769709159,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "tuttoggle",
+			"name": "pausestate",
 			"type": "boolean",
 			"desc": "",
-			"sid": 960609479603146
+			"sid": 775156168500138
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Anchor",
-			"name": "Anchor",
-			"sid": 853187038859089
-		},
-		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 923458617606972
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 397,
-						"height": 334,
-						"originX": 0.4987405541561713,
-						"originY": 1.497005988023952,
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3018836,
+						"imageSpriteId": 6871630,
 						"collisionPoly": {
 							"points": [
-								1,
-								1,
 								0,
 								1,
 								0,
-								0.9880239520958084,
+								0,
 								1,
-								0.9880239520958084
+								0,
+								1,
+								1
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
-						"width": 397,
-						"height": 334,
-						"originX": 0.4987405541561713,
-						"originY": 1.497005988023952,
+						"width": 512,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4752779,
+						"imageSpriteId": 2671343,
 						"collisionPoly": {
 							"points": [
-								1,
-								1,
 								0,
 								1,
 								0,
-								0.9880239520958084,
+								0,
 								1,
-								0.9880239520958084
+								0,
+								1,
+								1
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 584154023259514,
+				"sid": 805321183031685,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

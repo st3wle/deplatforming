@@ -1,0 +1,16 @@
+{
+	"name": "storywin",
+	"plugin-id": "Text",
+	"sid": 219222986474170,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "storyread",
+			"type": "boolean",
+			"desc": "",
+			"sid": 218392165830676
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -117,9 +117,62 @@
 					"parameters": {
 						"text": "languagearray.At(language,3)"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "storywin",
+					"sid": 369901045859986,
+					"parameters": {
+						"text": "languagearray.At(language,66)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "credits_gamejam",
+					"sid": 961157046612784,
+					"parameters": {
+						"text": "languagearray.At(language,30)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "credits_EU",
+					"sid": 798527383372161,
+					"parameters": {
+						"text": "languagearray.At(language,31)"
+					}
 				}
 			],
 			"sid": 516000614336911
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 833513506176202
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 117297608269138,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 482358907986975,
+					"parameters": {
+						"layout": "startmenu"
+					}
+				}
+			],
+			"sid": 471908549329383
 		},
 		{
 			"eventType": "block",
@@ -212,14 +265,38 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 842989741730971,
+					"sid": 829802425808860,
 					"parameters": {
-						"layout": "game"
+						"layout": "storywindow"
 					}
 				}
 			],
 			"sid": 242931145874335,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 704776196144539,
+					"parameters": {
+						"object": "minipop"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 972480705092024,
+					"parameters": {
+						"layout": "game"
+					}
+				}
+			],
+			"sid": 440089496618898
 		},
 		{
 			"eventType": "block",
@@ -326,6 +403,14 @@
 							"parameters": {
 								"text": "languagearray.At(language,3)"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "storywin",
+							"sid": 369901045859986,
+							"parameters": {
+								"text": "languagearray.At(language,66)"
+							}
 						}
 					],
 					"sid": 298499137211087
@@ -370,6 +455,14 @@
 							"sid": 795452688008725,
 							"parameters": {
 								"text": "languagearray.At(language,3)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "storywin",
+							"sid": 369901045859986,
+							"parameters": {
+								"text": "languagearray.At(language,66)"
 							}
 						}
 					],
@@ -487,6 +580,80 @@
 			],
 			"sid": 210699178754609,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 643822807396502,
+					"parameters": {
+						"object": "gameoverhate"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 391619584097655,
+					"parameters": {
+						"url": "\"https://gameoverhate.eu\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 549009344154451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 754949253809301,
+					"parameters": {
+						"object": "gameoverhate"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "gameoverhate",
+					"sid": 701159370353234,
+					"parameters": {
+						"color": "rgbEx(21, 255, 237)"
+					}
+				}
+			],
+			"sid": 154214076650657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 946274398436848,
+					"parameters": {
+						"object": "gameoverhate"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "gameoverhate",
+					"sid": 927862410682631,
+					"parameters": {
+						"color": "rgbEx(255, 255, 255)"
+					}
+				}
+			],
+			"sid": 593912756885406
 		}
 	],
 	"sid": 945314861288037

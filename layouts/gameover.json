@@ -81,7 +81,7 @@
 					}
 				},
 				{
-					"type": "endstatement",
+					"type": "endreason",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -108,7 +108,7 @@
 					"world": {
 						"x": 960,
 						"y": 500,
-						"width": 900,
+						"width": 1200,
 						"height": 200,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -126,7 +126,7 @@
 					"type": "endhint",
 					"properties": {
 						"text": "Text",
-						"enable-bbcode": true,
+						"enable-bbcode": false,
 						"font": "Arial",
 						"size": 30,
 						"line-height": 0,
@@ -150,7 +150,7 @@
 					"world": {
 						"x": 960,
 						"y": 650,
-						"width": 900,
+						"width": 1200,
 						"height": 200,
 						"originX": 0.5,
 						"originY": 0.5,
