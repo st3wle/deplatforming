@@ -13,6 +13,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "tutdone",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 499622921954651
+		},
+		{
+			"eventType": "variable",
 			"name": "tutorialpage",
 			"type": "number",
 			"initialValue": "0",
@@ -221,8 +231,7 @@
 					}
 				}
 			],
-			"sid": 947265047477440,
-			"isOrBlock": true
+			"sid": 947265047477440
 		},
 		{
 			"eventType": "block",
@@ -253,11 +262,109 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 259480213367894,
+					"parameters": {
+						"object": "starttext"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 635237827504289,
+					"parameters": {
+						"variable": "tutdone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "starttext",
+					"sid": 232962383667231,
+					"parameters": {
+						"color": "rgbEx(21,255,238)"
+					}
+				}
+			],
+			"sid": 928254748418674
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 612273828098228,
+					"parameters": {
+						"object": "starttext"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 392203078458140,
+					"parameters": {
+						"variable": "tutdone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "starttext",
+					"sid": 676519497323579,
+					"parameters": {
+						"color": "rgbEx(255,255,255)"
+					}
+				}
+			],
+			"sid": 593067268455253
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 716098919909436,
+					"parameters": {
+						"variable": "tutdone"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "starttext",
+					"sid": 911030375896063,
+					"parameters": {
+						"color": "rgbEx255(100,100,100)"
+					}
+				}
+			],
+			"sid": 356237110329584
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 152365786043492,
 					"parameters": {
 						"object": "starttext"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 328514205037403,
+					"parameters": {
+						"variable": "tutdone"
 					}
 				}
 			],
@@ -271,8 +378,7 @@
 					}
 				}
 			],
-			"sid": 242931145874335,
-			"isOrBlock": true
+			"sid": 242931145874335
 		},
 		{
 			"eventType": "block",

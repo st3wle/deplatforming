@@ -197,6 +197,15 @@
 					"parameters": {
 						"text": "languagearray.At(language,50)"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 333814998664813,
+					"parameters": {
+						"variable": "tutdone",
+						"value": "true"
+					}
 				}
 			],
 			"sid": 229519451081247

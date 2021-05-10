@@ -15,6 +15,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 606239396138467
+		},
+		{
+			"name": "motoactive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 157072649725135
 		}
 	],
 	"behaviorTypes": [

@@ -64,68 +64,6 @@
 					}
 				},
 				{
-					"type": "message",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"instanceVariables": {
-						"index": 0
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						},
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 453,
-						"y": -156,
-						"width": 30,
-						"height": 30,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "s1",
 					"properties": {
 						"initially-visible": true,
@@ -377,10 +315,10 @@
 						}
 					},
 					"world": {
-						"x": 210,
-						"y": 400,
-						"width": 201,
-						"height": 78.5,
+						"x": 212.88496068477411,
+						"y": 413.0167763749157,
+						"width": 270,
+						"height": 105,
 						"originX": 0.5,
 						"originY": 0.47770700636942676,
 						"color": [
@@ -1164,7 +1102,8 @@
 					"uid": 56,
 					"instanceVariables": {
 						"timer": 0,
-						"clickcounter": 3
+						"clickcounter": 3,
+						"motoactive": false
 					},
 					"behaviors": {
 						"Anchor": {

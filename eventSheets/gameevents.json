@@ -431,10 +431,19 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "toxic",
-					"sid": 621013017654158,
+					"sid": 110182858928317,
 					"parameters": {
 						"instance-variable": "timer",
-						"value": "150"
+						"value": "240"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "message",
+					"sid": 269971915086569,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "300"
 					}
 				},
 				{
@@ -556,17 +565,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "s1",
-					"sid": 588893569068055,
-					"parameters": {
-						"instance-variable": "randomize",
-						"value": "round(random(1.6,10.4))"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 312445642689793,
 			"children": [
 				{
@@ -582,7 +581,17 @@
 							"isInverted": true
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "s1",
+							"sid": 920258570239989,
+							"parameters": {
+								"instance-variable": "randomize",
+								"value": "round(random(1.6,10.4))"
+							}
+						}
+					],
 					"sid": 511151508783788,
 					"children": [
 						{
@@ -2183,24 +2192,22 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-speed",
-					"objectClass": "message",
-					"sid": 798968652805486,
-					"behaviorType": "MoveTo",
+					"id": "pick-by-comparison",
+					"objectClass": "System",
+					"sid": 338544563766296,
 					"parameters": {
+						"object": "message",
+						"expression": "message.MoveTo.Speed",
 						"comparison": 0,
-						"speed": "0"
+						"value": "0"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-visible",
+					"id": "destroy",
 					"objectClass": "message",
-					"sid": 731959177291688,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"sid": 415983323222137
 				}
 			],
 			"sid": 424733643047495
@@ -5818,15 +5825,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-speed",
-					"objectClass": "message",
-					"sid": 611110612233024,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"speed": "150"
-					}
-				},
-				{
 					"id": "set-position",
 					"objectClass": "pausecover",
 					"sid": 588094322196578,
@@ -5869,6 +5867,24 @@
 					"parameters": {
 						"x": "200",
 						"y": "-500"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "message",
+					"sid": 878389454300149,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "350"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "message",
+					"sid": 982914722843362,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"speed": "350"
 					}
 				}
 			],
