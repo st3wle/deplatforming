@@ -223,9 +223,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "pagecounter",
-					"sid": 240501251153449,
+					"sid": 347432672264230,
 					"parameters": {
-						"text": "\"<\" & tutorialpage+1 & \"/6>\""
+						"text": "\"<\" & tutorialpage+1 & \"/7>\""
 					}
 				}
 			],
@@ -280,11 +280,54 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 675192761760424,
+					"sid": 204015107908251,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 0,
 						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TutorialHeader",
+					"sid": 827321153579727,
+					"parameters": {
+						"text": "languagearray.At(language,86)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Tutorial1",
+					"sid": 424538082802040,
+					"parameters": {
+						"x": "960",
+						"y": "560"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial1",
+					"sid": 734997761575486,
+					"parameters": {
+						"text": "languagearray.At(language,88)"
+					}
+				}
+			],
+			"sid": 226902553491093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 846461417907570,
+					"parameters": {
+						"variable": "tutorialpage",
+						"comparison": 0,
+						"value": "2"
 					}
 				}
 			],
@@ -366,21 +409,21 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 436394357015270,
+							"sid": 774084904985818,
 							"parameters": {
 								"variable": "tutorialpage",
 								"comparison": 0,
-								"value": "1"
+								"value": "2"
 							}
 						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 788273825453327,
+							"sid": 337215367181843,
 							"parameters": {
 								"variable": "tutorialpage",
 								"comparison": 0,
-								"value": "2"
+								"value": "3"
 							}
 						}
 					],
@@ -787,11 +830,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 641155571318590,
+					"sid": 926076011684969,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 1,
-						"value": "3"
+						"value": "4"
 					}
 				}
 			],
@@ -824,11 +867,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 450369633859447,
+					"sid": 407169597372987,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 1,
-						"value": "3"
+						"value": "4"
 					}
 				}
 			],
@@ -861,11 +904,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 722794260821696,
+					"sid": 359828346363270,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 1,
-						"value": "3"
+						"value": "4"
 					}
 				}
 			],
@@ -898,11 +941,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 384737213994953,
+					"sid": 630092502395046,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 1,
-						"value": "3"
+						"value": "4"
 					}
 				}
 			],
@@ -1531,11 +1574,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 629359602760271,
+					"sid": 820274842387952,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 0,
-						"value": "2"
+						"value": "3"
 					}
 				}
 			],
@@ -1601,11 +1644,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 631215941862570,
+					"sid": 162405561231716,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 0,
-						"value": "3"
+						"value": "4"
 					}
 				}
 			],
@@ -2212,11 +2255,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 264065596671852,
+					"sid": 726439048423549,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 0,
-						"value": "4"
+						"value": "5"
 					}
 				}
 			],
@@ -2796,11 +2839,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 653331424613671,
+					"sid": 881929566672570,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 0,
-						"value": "5"
+						"value": "6"
 					}
 				}
 			],
@@ -3256,10 +3299,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 306202410021566,
+					"sid": 451625783052552,
 					"parameters": {
 						"variable": "tutorialpage",
-						"value": "5"
+						"value": "6"
 					}
 				}
 			],
@@ -3271,11 +3314,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 507396576970219,
+					"sid": 322537137181200,
 					"parameters": {
 						"variable": "tutorialpage",
 						"comparison": 0,
-						"value": "6"
+						"value": "7"
 					}
 				}
 			],
